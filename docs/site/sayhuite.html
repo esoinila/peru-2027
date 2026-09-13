@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#1c120c">
+<title>Sayhuite / Saywite monolith · Peru 2027</title>
+<link rel="manifest" href="../manifest.webmanifest">
+<link rel="icon" href="../img/icon-192.png">
+<link rel="apple-touch-icon" href="../img/icon-192.png">
+<link rel="stylesheet" href="../app.css">
+<link rel="stylesheet" href="../vendor/leaflet.css">
+</head>
+<body>
+<main class="wrap">
+
+<p class="muted"><a href="../sites.html">← Sites</a></p>
+<h1>Sayhuite / Saywite monolith</h1>
+<p><span class="badge">HS</span><span class="badge">ENG</span><span class="badge">PC</span> <span class="badge">point</span></p>
+<h2>What it is</h2>
+<p>2 × 4 m andesite boulder carved into a topographic “hydraulic model”: terraces, channels, ponds, 200+ figures (pumas, lizards, people). The rabbit-hole icon of the Cusco region — scale-model-of-a-landscape claims, water-flow experiments, “lost-tech” readings. Mainstream: Inca water-cult shrine (Hemming). Also on the hill: the Rumihuasi “cut” boulders and a second sliced monolith below.</p>
+<h2>Look for</h2>
+<div data-look-for="sayhuite" data-items='[&quot;Does water actually run through the channels? (pour a bottle)&quot;, &quot;The vertical cut faces on the lower boulders \u2014 saw, split or fracture?&quot;, &quot;Head-shaped damage: most figures were decapitated (colonial)&quot;]'></div>
+<p class="muted">3 h west of Cusco on the Abancay road (Curahuasi). Private driver day. Combine with Tarahuasi + Killarumiyoc on the way back.</p>
+<p><span class="badge shoot daylight">☀ daylight</span></p>
+<p><strong>360 shooting:</strong> Open hilltop; the monolith is roped off — get low with the 360 on a stick for the channel network.</p>
+<p><strong>Hours:</strong> ~07:00–17:00 (unverified)<br>
+<strong>Ticket:</strong> ~S/10–15 local ticket; not on Boleto Turístico</p>
+<ul class="plain"><li><a href="https://en.wikipedia.org/wiki/Sayhuite">https://en.wikipedia.org/wiki/Sayhuite</a></li></ul>
+<div id="map" class="map"></div>
+<p class="map-actions">
+  <a class="btn" href="https://www.google.com/maps/dir/?api=1&amp;destination=-13.5472,-72.8028&amp;travelmode=walking">Open in Google Maps</a>
+  <a class="btn ghost" href="geo:-13.5472,-72.8028?q=-13.5472,-72.8028(Sayhuite%20/%20Saywite%20monolith)">geo:</a>
+</p>
+
+<h2>My notes</h2>
+<textarea data-notes="sayhuite" placeholder="Notes stay on this phone"></textarea>
+
+<footer class="site-footer muted">Tour: <a href="https://www.albatros.fi/">Albatros Travel</a> · <a href="https://minun.albatros.fi">Minun Albatros (booking portal)</a><br>Source &amp; issues: <a href="https://github.com/esoinila/peru-2027">github.com/esoinila/peru-2027</a> · <a href="https://esoinila.github.io/peru-2027/">esoinila.github.io/peru-2027</a></footer>
+</main>
+<nav class="bottom-nav" aria-label="Main">
+  <a class="" href="../index.html">Today</a>
+  <a class="" href="../index.html#days">Days</a>
+  <a class="active" href="../sites.html">Sites</a>
+  <a class="" href="../hotels.html">Hotels</a>
+  <a class="" href="../contacts.html">Contacts</a>
+</nav>
+<script src="../app.js"></script>
+<script src="../vendor/leaflet.js"></script>
+<script>
+(function() {
+  var map = L.map('map', {zoomControl: true}).setView([-13.5472, -72.8028], 15);
+  L.tileLayer('../tiles/{z}/{x}/{y}.jpg', {
+    maxZoom: 16, minZoom: 12,
+    errorTileUrl: 'data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///ywAAAAAAQABAAACAUwAOw==',
+    attribution: 'Tiles © Esri, HERE, Garmin, © OpenStreetMap contributors'
+  }).addTo(map);
+  L.marker([-13.5472, -72.8028]).addTo(map).bindPopup("Sayhuite / Saywite monolith");
+})();
+</script>
+</body>
+</html>

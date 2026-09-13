@@ -156,7 +156,7 @@ def page_shell(here: Path, title: str, body: str, extra_head="", extra_js="", ac
 <body>
 <main class="wrap">
 {body}
-<footer class="site-footer muted">Source &amp; issues: <a href="https://github.com/esoinila/peru-2027">github.com/esoinila/peru-2027</a> · <a href="https://esoinila.github.io/peru-2027/">esoinila.github.io/peru-2027</a></footer>
+<footer class="site-footer muted">Tour: <a href="https://www.albatros.fi/">Albatros Travel</a> · <a href="https://minun.albatros.fi">Minun Albatros (booking portal)</a><br>Source &amp; issues: <a href="https://github.com/esoinila/peru-2027">github.com/esoinila/peru-2027</a> · <a href="https://esoinila.github.io/peru-2027/">esoinila.github.io/peru-2027</a></footer>
 </main>
 {nav_html(here, active)}
 <script src="{js}"></script>
@@ -188,6 +188,19 @@ def meal_badges(meals):
     if "D" not in m:
         out.append('<span class="badge meal find">find dinner</span>')
     return "".join(out)
+
+
+def options_block(d):
+    opts = d.get("options") or []
+    if not opts:
+        return ""
+    rows = []
+    for o in opts:
+        rows.append(f"""<details class="opt"><summary><strong>{esc(o["id"])} · {esc(o["name"])}</strong> <span class="verdict maybe">{esc(o["verdict"])}</span><br><span class="muted">{esc(o["hours"])} · {esc(o["cost"])}</span></summary>
+<p><strong>Plan:</strong> {esc(o["plan"])}</p>
+<p><strong>Why:</strong> {esc(o["why"])}</p>
+<p class="muted"><strong>Risk:</strong> {esc(o["risk"])}</p></details>""")
+    return f"""<h2>Options for the day</h2><div class="card">{''.join(rows)}</div>"""
 
 
 def evening_block(trip, hotel_id, here):
@@ -275,6 +288,9 @@ details.daytile[open] .chev { transform: rotate(90deg); }
 details.daytile[open] > summary { border-bottom-left-radius: 0; border-bottom-right-radius: 0; margin-bottom: 0; }
 details.daytile .card.detail { border-top: 0; border-top-left-radius: 0; border-top-right-radius: 0; }
 details.daytile .card.detail .timeline { margin: 6px 0; }
+details.opt { border-top: 1px solid var(--line); padding: 8px 0; }
+details.opt:first-child { border-top: 0; }
+details.opt summary { cursor: pointer; }
 .tilectl { float: right; font-size: 0.75rem; font-weight: 400; }
 .tilectl button { background: var(--bg2); color: var(--muted); border: 1px solid var(--line); border-radius: 999px; padding: 3px 9px; font-size: 0.75rem; }
 .badge.prog { background: var(--bg2); color: var(--muted); }
@@ -590,7 +606,7 @@ def generate_pages(trip, pins):
 <div id="offline-pill" class="pill">updating…</div>
 {hero}
 <h1>{esc(trip["trip"]["title"])}</h1>
-<p class="muted">{esc(trip["trip"].get("subtitle",""))} · {trip["trip"]["start"]} – {trip["trip"]["end"]}</p>
+<p class="muted">{esc(trip["trip"].get("subtitle",""))} · {trip["trip"]["start"]} – {trip["trip"]["end"]} · <a href="{esc(trip["trip"]["agency"].get("tour_page",""))}">Albatros tour page</a> · <a href="{esc(trip["trip"]["agency"]["portal"])}">portal</a></p>
 <script type="application/json" id="trip-days-json">{json.dumps(days_json)}</script>
 <script type="application/json" id="trip-photo-slots-json">{json.dumps(photo_slots)}</script>
 <div data-today-card></div>
@@ -655,6 +671,7 @@ window.TRIP_END = {json.dumps(trip["trip"]["end"])};
 <ul class="timeline">{prog}</ul>
 <h2>Free time</h2>
 <div class="card">{free or "<p class='muted'>None listed</p>"}</div>
+{options_block(d)}
 <h2>Targets</h2>
 {''.join(tcards) or "<p class='muted'>No rabbit-hole targets this day.</p>"}
 {evening_block(trip, d.get("hotel"), here)}
@@ -751,7 +768,7 @@ window.TRIP_END = {json.dumps(trip["trip"]["end"])};
   <p><a href="tel:{esc(ag["phone"])}">{esc(ag["phone"])}</a><br>
   <a href="mailto:{esc(ag["email"])}">{esc(ag["email"])}</a></p>
   <p>Booking {esc(ag["booking"])} · member {esc(ag.get("member",""))}</p>
-  <p><a href="{esc(ag["portal"])}">{esc(ag["portal"])}</a></p>
+  <p class="map-actions"><a class="btn" href="{esc(ag["portal"])}">Minun Albatros portal</a> <a class="btn ghost" href="{esc(ag.get("tour_page", ag.get("website","")))}">Tour page</a> <a class="btn ghost" href="{esc(ag.get("website",""))}">albatros.fi</a></p>
   <p class="muted">{esc(ag.get("hours",""))}</p>
 </div>
 <div class="card">

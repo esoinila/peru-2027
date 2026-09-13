@@ -12,7 +12,9 @@
    "email": "info@albatros.fi",
    "booking": "60067436",
    "member": "30029419",
-   "portal": "https://minun.albatros.fi"
+   "portal": "https://minun.albatros.fi",
+   "website": "https://www.albatros.fi/",
+   "tour_page": "https://www.albatros.fi/matkat/inkojen-aarteet-ja-aromit?variant=20270304"
   }
  },
  "hotels": [
@@ -332,11 +334,71 @@
     }
    ],
    "targets": [
+    "sayhuite",
+    "tarahuasi",
+    "killarumiyoc",
     "tipon",
     "piquillacta",
     "rumicolca",
+    "andahuaylillas",
+    "amaru-machay",
+    "inkilltambo",
+    "quespehuara-huacas",
+    "waqrapukara",
     "chinchero",
     "rainbow-mountain"
+   ],
+   "options": [
+    {
+     "id": "A",
+     "name": "West: Sayhuite stone + Tarahuasi + Killarumiyoc",
+     "verdict": "most rabbit-holey",
+     "hours": "~11 h, 07:00–18:00",
+     "cost": "private driver S/400–550 (ask hotel/Tierra Viva; agree return via Limatambo)",
+     "plan": "07:00 leave → Killarumiyoc (1 h) → Tarahuasi (30 min more) → Sayhuite (1.5 h more, arrive ~11:00) → lunch in Curahuasi (anise town) → back 3 h → Cusco ~17:30.",
+     "why": "The Sayhuite monolith is the single most-cited “impossible” object in the Cusco region — the hydraulic-model stone. Three sites nobody on the tour will have seen.",
+     "risk": "6 h in a car; Abancay road is good asphalt but winding (motion sickness). Rain in March."
+    },
+    {
+     "id": "B",
+     "name": "South Valley + skulls: Tipón → Piquillacta → Rumicolca → Andahuaylillas",
+     "verdict": "best value",
+     "hours": "~7 h, 08:30–16:00",
+     "cost": "taxi day S/150–250; Boleto Turístico circuit II S/70 (or your 10-day full)",
+     "plan": "Tipón fountains (1.5 h) → Piquillacta Wari grid (1 h) → Rumicolca gate + quarry (20 min) → Andahuaylillas church + elongated-skull museum (1 h) → lunch Huasao/Saylla (chicharrón) → back by 16:00, evening free for MAP.",
+     "why": "Hydraulics, pre-Inca layering and cranial deformation in one 40 km loop; you are back for a Cusco evening.",
+     "risk": "Low. Piquillacta is exposed — sun/rain."
+    },
+    {
+     "id": "C",
+     "name": "Cusco caves on foot: Amaru Machay → Inkilltambo → Q’enqo → Quespehuara",
+     "verdict": "cheapest, enclosed 360",
+     "hours": "~5 h, 08:00–13:00",
+     "cost": "taxi to Sacsayhuamán gate S/15; sites free",
+     "plan": "Taxi to Temple of the Moon → cave + skylight → ravine walk to Inkilltambo → back via Q’enqo → Quespehuara huacas → walk down to San Blas for lunch. Afternoon: Museo Inka (till 16:00).",
+     "why": "Carved living rock in four flavours, walkable, no ticket, and the only option with real cave interiors.",
+     "risk": "Solo walking in the eucalyptus — go in daylight, take someone from the group."
+    },
+    {
+     "id": "D",
+     "name": "Waqrapukara",
+     "verdict": "epic but too long",
+     "hours": "12–14 h",
+     "cost": "tour S/150–250 or driver S/500",
+     "plan": "04:30 depart → 3.5 h drive → 2.5 h hike at 4 000 m → site → hike back → Cusco 19:00+.",
+     "why": "Canchi-under-Inca on a cliff over the Apurímac — the PC story with a view.",
+     "risk": "Altitude 4 300 m on day 9, March rain, a 14 h day before the longest drive of the tour (day 10). Only if the weather is clearly dry."
+    },
+    {
+     "id": "RM",
+     "name": "Rainbow Mountain (Albatros add-on)",
+     "verdict": "scenery, not archaeology",
+     "hours": "04:00–~16:00",
+     "cost": "158–178 €, min 8 pax, book ≥60 days",
+     "plan": "Vinicunca 5 200 m by ATV from 4 600 m.",
+     "why": "Colour-banded sediments. No sites.",
+     "risk": "PDF says Apr–Nov departures only; March is peak rain — the mountain is often under cloud/snow. Not booked."
+    }
    ]
   },
   {
@@ -1438,6 +1500,193 @@
    ],
    "encyclopedia_pin": "monte-sierpe-band-of-holes",
    "photo_slot": false
+  },
+  {
+   "slug": "sayhuite",
+   "precision": "point",
+   "photo_slot": true,
+   "name": "Sayhuite / Saywite monolith",
+   "lat": -13.5472,
+   "lon": -72.8028,
+   "tags": [
+    "HS",
+    "ENG",
+    "PC"
+   ],
+   "what": "2 × 4 m andesite boulder carved into a topographic “hydraulic model”: terraces, channels, ponds, 200+ figures (pumas, lizards, people). The rabbit-hole icon of the Cusco region — scale-model-of-a-landscape claims, water-flow experiments, “lost-tech” readings. Mainstream: Inca water-cult shrine (Hemming). Also on the hill: the Rumihuasi “cut” boulders and a second sliced monolith below.",
+   "look_for": [
+    "Does water actually run through the channels? (pour a bottle)",
+    "The vertical cut faces on the lower boulders — saw, split or fracture?",
+    "Head-shaped damage: most figures were decapitated (colonial)"
+   ],
+   "from_hotel": "3 h west of Cusco on the Abancay road (Curahuasi). Private driver day. Combine with Tarahuasi + Killarumiyoc on the way back.",
+   "hours": "~07:00–17:00 (unverified)",
+   "ticket": "~S/10–15 local ticket; not on Boleto Turístico",
+   "shoot": [
+    "daylight"
+   ],
+   "shoot_note": "Open hilltop; the monolith is roped off — get low with the 360 on a stick for the channel network.",
+   "source_urls": [
+    "https://en.wikipedia.org/wiki/Sayhuite"
+   ]
+  },
+  {
+   "slug": "tarahuasi",
+   "precision": "point",
+   "photo_slot": true,
+   "name": "Tarahuasi (Limatambo)",
+   "lat": -13.4692,
+   "lon": -72.4364,
+   "tags": [
+    "HS",
+    "ENG"
+   ],
+   "what": "Inca usnu platform with a polygonal wall of pinkish limestone whose joints form 28 “flower” patterns; lichen turns it orange. On the Chinchaysuyu royal road; Hemming calls it one of the finest walls outside Cusco.",
+   "look_for": [
+    "Flower-shaped joint clusters",
+    "Niches on the upper platform",
+    "Quarry source? Stone is local limestone, not granite"
+   ],
+   "from_hotel": "1 h 20 west of Cusco, Limatambo. On the Sayhuite road.",
+   "hours": "~07:00–17:00 (unverified)",
+   "ticket": "~S/10 (unverified)",
+   "shoot": [
+    "daylight"
+   ],
+   "source_urls": [
+    "https://en.wikipedia.org/wiki/Tarahuasi"
+   ]
+  },
+  {
+   "slug": "killarumiyoc",
+   "precision": "approx",
+   "photo_slot": true,
+   "name": "Killarumiyoc — Moon stone",
+   "lat": -13.453,
+   "lon": -72.299,
+   "tags": [
+    "HS",
+    "ENG"
+   ],
+   "what": "Archaeological park at Ancahuasi: a bedrock outcrop carved with a crescent (“moon stone”), seats, channels and steps; ceremonial platforms and terraces around it. Quiet, rarely visited.",
+   "look_for": [
+    "Crescent carving orientation vs sunrise/moonrise",
+    "Cut steps and channels in living rock (compare Q’enqo)"
+   ],
+   "from_hotel": "~1 h west of Cusco off the Abancay road; 10 min from Ancahuasi village.",
+   "hours": "daylight, unstaffed (unverified)",
+   "ticket": "free / small local fee",
+   "shoot": [
+    "daylight"
+   ],
+   "source_urls": [
+    "https://en.wikipedia.org/wiki/Killarumiyoc"
+   ]
+  },
+  {
+   "slug": "andahuaylillas",
+   "precision": "point",
+   "photo_slot": true,
+   "name": "Andahuaylillas — San Pedro church + Museo Ritos Andinos",
+   "lat": -13.678,
+   "lon": -71.673,
+   "tags": [
+    "PC"
+   ],
+   "what": "“Sistine Chapel of the Americas”: 17th-c. church with painted ceilings and gold leaf on an Inca-era village site. Next door the small Museo Ritos Andinos shows locally excavated elongated skulls — the cranial-deformation rabbit hole, 40 min from Cusco, no Paracas trip needed.",
+   "look_for": [
+    "Elongated skulls: binding deformation vs. the “giant / hybrid” overlay",
+    "Church built over which older structure? Ask the guide",
+    "Mural of the “two roads” (heaven/hell) by the door"
+   ],
+   "from_hotel": "40 km SE of Cusco past Piquillacta — the natural end of the South Valley loop.",
+   "hours": "church ~08:00–17:30, museum similar (unverified)",
+   "ticket": "Ruta del Barroco Andino ticket ~S/15–20 covers 3–4 churches; museum small fee",
+   "shoot": [
+    "enclosed"
+   ],
+   "shoot_note": "Church interior is a painted box — enclosed 360 subject; photography inside is often prohibited, check.",
+   "source_urls": [
+    "https://en.wikivoyage.org/wiki/Andahuaylillas"
+   ]
+  },
+  {
+   "slug": "waqrapukara",
+   "precision": "point",
+   "photo_slot": true,
+   "name": "Waqrapukara — horn fortress",
+   "lat": -14.0229,
+   "lon": -71.6936,
+   "tags": [
+    "PC",
+    "ENG"
+   ],
+   "what": "Canchi (pre-Inca) then Inca ceremonial site at 4 300 m on a cliff above the Apurímac canyon: twin rock “horns”, three-storey fine masonry, terraces. Declared heritage 2017; the current “new Machu Picchu”.",
+   "look_for": [
+    "Circular Canchi buildings under Inca rectangular work — PC layering",
+    "Double-jamb doorways = ceremonial rank"
+   ],
+   "from_hotel": "3–4 h drive to Santa Lucía/Huayqui + 2–3 h hike each way at 4 000+ m. 12–14 h day from Cusco. Weather in March is the problem.",
+   "hours": "daylight",
+   "ticket": "~S/10 community fee",
+   "shoot": [
+    "daylight"
+   ],
+   "source_urls": [
+    "https://en.wikipedia.org/wiki/Waqrapukara"
+   ]
+  },
+  {
+   "slug": "amaru-machay",
+   "precision": "approx",
+   "photo_slot": true,
+   "name": "Amaru Machay — Temple of the Moon cave",
+   "lat": -13.505,
+   "lon": -71.965,
+   "tags": [
+    "HS",
+    "PS"
+   ],
+   "what": "Carved cave 20 min NE of Sacsayhuamán: altar niches, a serpent (amaru) relief, polished steps, the skylight that lights the altar. The Cusco cave everybody films for “softened stone” claims.",
+   "look_for": [
+    "Polished vs. rough surfaces — tool marks in the transitions",
+    "Skylight alignment",
+    "Puma/serpent reliefs"
+   ],
+   "from_hotel": "Walk or 15 min taxi from Sacsayhuamán; combine with Q’enqo, Inkilltambo and Quespehuara.",
+   "hours": "daylight, unstaffed",
+   "ticket": "free",
+   "shoot": [
+    "enclosed",
+    "daylight"
+   ],
+   "shoot_note": "Enclosed 360 gold: the cave chamber with the skylight beam. Bring a small light for the back."
+  },
+  {
+   "slug": "inkilltambo",
+   "precision": "point",
+   "photo_slot": true,
+   "name": "Inkilltambo",
+   "lat": -13.5019,
+   "lon": -71.9524,
+   "tags": [
+    "HS",
+    "ENG"
+   ],
+   "what": "Carved rock huaca with fountains, niches and terraces in the ravine east of the Temple of the Moon; restored 2010s; almost no visitors.",
+   "look_for": [
+    "Carved seats + water channels in one outcrop",
+    "Restored vs original masonry"
+   ],
+   "from_hotel": "25 min walk from Amaru Machay along the ravine, or taxi to San Sebastián side.",
+   "hours": "daylight",
+   "ticket": "free",
+   "shoot": [
+    "daylight"
+   ],
+   "source_urls": [
+    "https://en.wikipedia.org/wiki/Inkilltambo"
+   ]
   }
  ],
  "windows": [
@@ -1558,9 +1807,9 @@
    "dow": "Fri",
    "window": "all day",
    "verdict": "best",
-   "best": "tipon",
-   "alt": "museo-inka",
-   "note": "Full day. Option A South Valley: Tipón (water channels) → Piquillacta (Wari grid) → Rumicolca gate; taxi day ~S/150–200, BTG circuit II S/70. Option B Chinchero + Huchuy Qosqo — but NO Sunday market on a Friday, so A wins unless you want the walk. Museo Inka Fri 09–16 fits the morning if you stay in town. Rainbow Mountain: PDF says Apr–Nov only — March is rainy season; treat as unavailable unless Albatros confirms.",
+   "best": "sayhuite",
+   "alt": "andahuaylillas",
+   "note": "Rainbow Mountain not booked → real free day. A = Sayhuite stone (3 h west, most rabbit-holey). B = South Valley + Andahuaylillas skulls (best value). C = Cusco caves on foot (cheap, enclosed 360). See the options table on the day page.",
    "approx": "~08:00–23:30",
    "amount": "~15.5 h · ~10 h daylight",
    "basis": "full free day · bed before midnight",
