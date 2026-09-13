@@ -1,5 +1,5 @@
 
-const CACHE = "peru-2027-84d5715d34ac";
+const CACHE = "peru-2027-3244a36e5a51";
 self.addEventListener("install", event => {
   event.waitUntil(
     fetch("precache.json").then(r => r.json()).then(files =>

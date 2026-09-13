@@ -156,6 +156,7 @@ def page_shell(here: Path, title: str, body: str, extra_head="", extra_js="", ac
 <body>
 <main class="wrap">
 {body}
+<footer class="site-footer muted">Source &amp; issues: <a href="https://github.com/esoinila/peru-2027">github.com/esoinila/peru-2027</a> · <a href="https://esoinila.github.io/peru-2027/">esoinila.github.io/peru-2027</a></footer>
 </main>
 {nav_html(here, active)}
 <script src="{js}"></script>
@@ -221,6 +222,13 @@ h3 { font-size: 1rem; margin: 0 0 6px; }
 p { margin: 0 0 10px; }
 a { color: var(--accent2); }
 .muted { color: var(--muted); font-size: 0.92rem; }
+.site-footer { margin: 24px 0 8px; font-size: 0.8rem; text-align: center; }
+.site-footer a { color: var(--muted); text-decoration: underline; }
+.verdict { display: inline-block; padding: 2px 8px; border-radius: 999px; font-size: 0.8rem; border: 1px solid var(--line); }
+.verdict.best { background: #1f3a1f; color: #9fe29f; }
+.verdict.good { background: #2a3a1a; color: #cfe89a; }
+.verdict.maybe { background: #3a2a12; color: var(--accent); }
+.verdict.low, .verdict.none { background: #2a2020; color: var(--muted); }
 .card { background: var(--card); border: 1px solid var(--line); border-radius: var(--radius);
   padding: 14px; margin: 0 0 12px; }
 .card.today { border-color: var(--accent); box-shadow: 0 0 0 1px var(--accent); }
@@ -487,7 +495,7 @@ def generate_pages(trip, pins):
 <div data-today-card></div>
 <h2 id="days">Days</h2>
 {''.join(day_cards)}
-<p><a href="packing.html">Packing</a> · <a href="sites.html">All sites</a></p>
+<p><a href="packing.html">Packing</a> · <a href="sites.html">All sites</a> · <a href="windows.html">Free-time windows</a></p>
 <script>
 window.TRIP_TZ = {json.dumps(trip["trip"]["tz"])};
 window.TRIP_START = {json.dumps(trip["trip"]["start"])};
@@ -504,6 +512,15 @@ window.TRIP_END = {json.dumps(trip["trip"]["end"])};
         h = hotels.get(d.get("hotel") or "")
         prog = "".join(f"<li>{esc(p)}</li>" for p in d.get("programme") or [])
         free = "".join(f"<p><strong>{esc(f.get('from',''))}</strong> — {esc(f.get('note',''))}</p>" for f in d.get("free") or [])
+        win = next((w for w in trip.get("windows") or [] if w["day"] == d["n"]), None)
+        if win:
+            wb = site_by_slug(trip, win.get("best") or "")
+            wa = site_by_slug(trip, win.get("alt") or "")
+            picks = " · ".join(
+                f'<a href="{rel(here, DOCS / "site" / (x["slug"] + ".html"))}">{esc(x["name"])}</a>' for x in (wb, wa) if x
+            )
+            free += f"""<p class="verdict {esc(win["verdict"])}"><strong>Verdict: {esc(win["verdict"])}</strong>{(" — " + picks) if picks else ""}</p>
+<p>{esc(win["note"])}</p>"""
         tcards = []
         for slug in d.get("targets") or []:
             s = site_by_slug(trip, slug)
@@ -581,7 +598,7 @@ window.TRIP_END = {json.dumps(trip["trip"]["end"])};
 <h2>Look for</h2>
 <div data-look-for="{esc(s["slug"])}" data-items='{esc(look)}'></div>
 <p class="muted">{esc(s.get("from_hotel",""))}</p>
-<p><strong>Hours:</strong> {esc(s.get("hours",""))}<br>
+<p><strong>Hours:</strong> {esc(s.get("hours",""))}{(' <a class="muted" href="' + esc(s["hours_src"]) + '">src</a>') if s.get("hours_src") else ""}<br>
 <strong>Ticket:</strong> {esc(s.get("ticket",""))}</p>
 {f'<ul class="plain">{src_urls}</ul>' if src_urls else ""}
 {mmap}
@@ -660,6 +677,25 @@ window.TRIP_END = {json.dumps(trip["trip"]["end"])};
     body = f"<h1>Packing</h1><ul class='plain'>{pack}</ul><h2>Practical</h2><ul class='plain'>{prac}</ul>"
     here.write_text(page_shell(here, "Packing · Peru 2027", body, active="contacts"), encoding="utf-8")
 
+    # free-time windows
+    here = DOCS / "windows.html"
+    rows = []
+    for w in trip.get("windows") or []:
+        picks = []
+        for key in ("best", "alt"):
+            s = site_by_slug(trip, w.get(key) or "")
+            if s:
+                picks.append(f'<a href="{rel(here, DOCS / "site" / (s["slug"] + ".html"))}">{esc(s["name"])}</a> <span class="muted">({esc(s.get("hours",""))})</span>')
+        rows.append(f"""<div class="card">
+  <div class="row"><strong><a href="day/{w['day']:02d}.html">Day {w['day']}</a></strong> <span class="muted">{esc(w['date'])} {esc(w['dow'])} · {esc(w['window'])}</span> <span class="verdict {esc(w['verdict'])}">{esc(w['verdict'])}</span></div>
+  {('<p>' + '<br>'.join(picks) + '</p>') if picks else ''}
+  <p class="muted">{esc(w['note'])}</p>
+</div>""")
+    body = f"""<h1>Free-time windows</h1>
+<p class="muted">Programme gaps vs. what is actually open. Hours are from public sources as of Sep 2026 — confirm on site. Sunset ≈ 18:15 all trip.</p>
+<p><strong>Rules of thumb:</strong> Boleto Turístico (S/130, 10 days) covers Sacsayhuamán, Q'enqo, Tambomachay, Tipón, Piquillacta, Chinchero, Ollantaytambo, Moray — ask the leader whether the group ticket is yours to keep. Coricancha and Machu Picchu are separate tickets. Museo Inka closes 16:00 and on Sundays; MAP is open till 22:00 daily; Huaca Pucllana is closed Tuesdays.</p>
+{''.join(rows)}"""
+    here.write_text(page_shell(here, "Free-time windows · Peru 2027", body, active="days"), encoding="utf-8")
 
 def deg2num(lat, lon, zoom):
     lat_rad = math.radians(lat)

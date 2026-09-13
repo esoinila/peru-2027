@@ -22,6 +22,13 @@ h3 { font-size: 1rem; margin: 0 0 6px; }
 p { margin: 0 0 10px; }
 a { color: var(--accent2); }
 .muted { color: var(--muted); font-size: 0.92rem; }
+.site-footer { margin: 24px 0 8px; font-size: 0.8rem; text-align: center; }
+.site-footer a { color: var(--muted); text-decoration: underline; }
+.verdict { display: inline-block; padding: 2px 8px; border-radius: 999px; font-size: 0.8rem; border: 1px solid var(--line); }
+.verdict.best { background: #1f3a1f; color: #9fe29f; }
+.verdict.good { background: #2a3a1a; color: #cfe89a; }
+.verdict.maybe { background: #3a2a12; color: var(--accent); }
+.verdict.low, .verdict.none { background: #2a2020; color: var(--muted); }
 .card { background: var(--card); border: 1px solid var(--line); border-radius: var(--radius);
   padding: 14px; margin: 0 0 12px; }
 .card.today { border-color: var(--accent); box-shadow: 0 0 0 1px var(--accent); }

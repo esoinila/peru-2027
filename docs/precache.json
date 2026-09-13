@@ -1220,5 +1220,6 @@
   "./vendor/images/marker-icon.png",
   "./vendor/images/marker-shadow.png",
   "./vendor/leaflet.css",
-  "./vendor/leaflet.js"
+  "./vendor/leaflet.js",
+  "./windows.html"
 ]
