@@ -376,19 +376,22 @@ APP_JS = r"""
       if (!app) return "sw.js";
       return app.getAttribute("src").replace("app.js", "sw.js");
     })();
-    navigator.serviceWorker.register(swUrl).then(() => {
-      const pill = document.getElementById("offline-pill");
-      if (pill) {
-        pill.textContent = navigator.onLine ? "offline ready ✓" : "offline ready ✓";
-      }
-    }).catch(() => {
-      const pill = document.getElementById("offline-pill");
-      if (pill) pill.textContent = "sw failed";
-    });
-    navigator.serviceWorker.addEventListener("controllerchange", () => {
-      const pill = document.getElementById("offline-pill");
-      if (pill) pill.textContent = "updating…";
-    });
+    const pill = document.getElementById("offline-pill");
+    const setPill = t => { if (pill) pill.textContent = t; };
+    const markReady = () => { setPill("offline ready ✓"); if (pill) pill.classList.add("ready"); };
+    const watch = w => {
+      if (!w) return;
+      setPill("caching for offline…");
+      w.addEventListener("statechange", () => {
+        if (w.state === "activated") markReady();
+        else if (w.state === "redundant") setPill("offline cache failed — reload on wifi");
+      });
+    };
+    navigator.serviceWorker.register(swUrl).then(reg => {
+      if (reg.active && !reg.installing && !reg.waiting) markReady();
+      watch(reg.installing);
+      reg.addEventListener("updatefound", () => watch(reg.installing));
+    }).catch(() => setPill("sw failed"));
   }
 })();
 """

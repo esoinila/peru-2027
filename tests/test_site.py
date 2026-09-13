@@ -92,7 +92,10 @@ def test_playwright_suite():
             assert "http://server.arcgisonline" not in src and "https://server.arcgisonline" not in src
 
             page.goto(f"{base}/index.html", wait_until="networkidle")
-            page.wait_for_timeout(500)
+            page.wait_for_function(
+                "document.getElementById('offline-pill')?.textContent.includes('offline ready')",
+                timeout=120000,
+            )
             page.goto(f"{base}/day/06.html", wait_until="networkidle")
             context.set_offline(True)
             page.reload(wait_until="load")
