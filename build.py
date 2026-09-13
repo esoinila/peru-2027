@@ -520,6 +520,7 @@ window.TRIP_END = {json.dumps(trip["trip"]["end"])};
                 f'<a href="{rel(here, DOCS / "site" / (x["slug"] + ".html"))}">{esc(x["name"])}</a>' for x in (wb, wa) if x
             )
             free += f"""<p class="verdict {esc(win["verdict"])}"><strong>Verdict: {esc(win["verdict"])}</strong>{(" — " + picks) if picks else ""}</p>
+<p><strong>{esc(win.get("approx",""))}</strong> · {esc(win.get("amount",""))}<br><span class="muted">{esc(win.get("basis",""))}</span></p>
 <p>{esc(win["note"])}</p>"""
         tcards = []
         for slug in d.get("targets") or []:
@@ -688,11 +689,13 @@ window.TRIP_END = {json.dumps(trip["trip"]["end"])};
                 picks.append(f'<a href="{rel(here, DOCS / "site" / (s["slug"] + ".html"))}">{esc(s["name"])}</a> <span class="muted">({esc(s.get("hours",""))})</span>')
         rows.append(f"""<div class="card">
   <div class="row"><strong><a href="day/{w['day']:02d}.html">Day {w['day']}</a></strong> <span class="muted">{esc(w['date'])} {esc(w['dow'])} · {esc(w['window'])}</span> <span class="verdict {esc(w['verdict'])}">{esc(w['verdict'])}</span></div>
+  <p><strong>{esc(w.get('approx',''))}</strong> · {esc(w.get('amount',''))}<br><span class="muted">{esc(w.get('basis',''))}</span></p>
   {('<p>' + '<br>'.join(picks) + '</p>') if picks else ''}
   <p class="muted">{esc(w['note'])}</p>
 </div>""")
     body = f"""<h1>Free-time windows</h1>
-<p class="muted">Programme gaps vs. what is actually open. Hours are from public sources as of Sep 2026 — confirm on site. Sunset ≈ 18:15 all trip.</p>
+<p class="muted">Programme gaps vs. what is actually open. Hours are from public sources as of Sep 2026 — confirm on site. Sunset ≈ 18:15 all trip. Free-time start times are estimates from the programme, not from Albatros — the tour leader's word overrides.</p>
+<p><strong>Total free time:</strong> ≈ 65 h over 12 days, but only ≈ 25 h of it is daylight. The daylight sits in three places: day 7 afternoon (~4 h), day 8 afternoon (~4 h), day 9 full day (~10 h). Everything else is evenings.</p>
 <p><strong>Rules of thumb:</strong> Boleto Turístico (S/130, 10 days) covers Sacsayhuamán, Q'enqo, Tambomachay, Tipón, Piquillacta, Chinchero, Ollantaytambo, Moray — ask the leader whether the group ticket is yours to keep. Coricancha and Machu Picchu are separate tickets. Museo Inka closes 16:00 and on Sundays; MAP is open till 22:00 daily; Huaca Pucllana is closed Tuesdays.</p>
 {''.join(rows)}"""
     here.write_text(page_shell(here, "Free-time windows · Peru 2027", body, active="days"), encoding="utf-8")
