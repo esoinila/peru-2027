@@ -1,5 +1,11 @@
 # Peru 2027 — offline trip PWA
 
+## 📱 LIVE SITE → **https://esoinila.github.io/peru-2027/**
+
+Open that link on your phone (on wifi), Chrome menu → **Add to Home screen**, wait for **offline ready ✓**.
+
+---
+
 Static site + PWA for the Albatros tour **Inkojen aarteet ja aromit** (PESGL15AFI), 4–17 Mar 2027. GitHub Pages serves `docs/` from `main`. Install once on wifi, then use offline in Peru.
 
 Source of truth: `data/trip.json` (transcribed from the private itinerary / rabbit-holes / booking files — the agency PDF is **not** in this repo).
