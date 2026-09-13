@@ -229,6 +229,16 @@ a { color: var(--accent2); }
 .verdict.good { background: #2a3a1a; color: #cfe89a; }
 .verdict.maybe { background: #3a2a12; color: var(--accent); }
 .verdict.low, .verdict.none { background: #2a2020; color: var(--muted); }
+.card.programme { border-left: 4px solid var(--line); }
+.badge.prog { background: var(--bg2); color: var(--muted); }
+.card.freebox { margin: -4px 0 14px 0; border: 2px solid var(--accent); border-left-width: 8px; background: #241a0e; }
+.card.freebox h3 { margin: 6px 0 2px; color: var(--accent); }
+.card.freebox p { margin: 4px 0 0; font-size: 0.9rem; }
+.card.freebox.best { border-color: #9fe29f; background: #17251a; }
+.card.freebox.best h3 { color: #9fe29f; }
+.card.freebox.none, .card.freebox.low { border-color: var(--muted); background: var(--card); }
+.card.freebox.none h3, .card.freebox.low h3 { color: var(--muted); }
+[id^="day"] { scroll-margin-top: 12px; }
 .card { background: var(--card); border: 1px solid var(--line); border-radius: var(--radius);
   padding: 14px; margin: 0 0 12px; }
 .card.today { border-color: var(--accent); box-shadow: 0 0 0 1px var(--accent); }
@@ -470,14 +480,27 @@ def generate_pages(trip, pins):
     # index
     here = DOCS / "index.html"
     day_cards = []
+    wins = {w["day"]: w for w in trip.get("windows") or []}
     for d in trip["days"]:
         h = hotels.get(d.get("hotel") or "")
-        free_badge = '<span class="badge free">free time</span>' if d.get("free") else ""
+        w = wins.get(d["n"])
+        free_badge = f'<span class="badge free">free {esc(w["approx"])} · {esc(w["hours"])}</span>' if w else ""
         href = f'day/{d["n"]:02d}.html'
-        day_cards.append(f"""<a class="card" href="{href}" style="display:block;text-decoration:none;color:inherit">
-          <div class="row"><strong>Day {d["n"]}</strong> <span class="muted">{esc(d["date"])}</span> {free_badge}</div>
+        day_cards.append(f"""<a class="card programme" href="{href}" style="display:block;text-decoration:none;color:inherit">
+          <div class="row"><span class="badge prog">programme</span> <strong>Day {d["n"]}</strong> <span class="muted">{esc(d["date"])}</span></div>
           <h3>{esc(d["title"])}</h3>
           <p class="muted">{esc(h["name"] if h else "in transit")} · {d["altitude_m"]} m</p>
+          {f'<p>{free_badge}</p>' if free_badge else ''}
+        </a>""")
+        if w:
+            best = site_by_slug(trip, w.get("best") or "")
+            alt = site_by_slug(trip, w.get("alt") or "")
+            picks = " / ".join(esc(x["name"]) for x in (best, alt) if x)
+            day_cards.append(f"""<a class="card freebox {esc(w["verdict"])}" href="windows.html#day{d["n"]}" style="display:block;text-decoration:none;color:inherit">
+          <div class="row"><span class="badge free">FREE TIME</span> <span class="verdict {esc(w["verdict"])}">{esc(w["verdict"])}</span></div>
+          <h3>{esc(w.get("approx",""))} <span class="muted">· {esc(w.get("hours",""))}</span></h3>
+          <p class="muted">{esc(w.get("daylight",""))} · {esc(w.get("basis",""))}</p>
+          {f'<p><strong>{picks}</strong></p>' if picks else ''}
         </a>""")
     hero = ""
     for name in ["albatros-p02-1.jpg", "albatros-p02-2.jpg", "albatros-p03-1.jpg"]:
@@ -687,7 +710,7 @@ window.TRIP_END = {json.dumps(trip["trip"]["end"])};
             s = site_by_slug(trip, w.get(key) or "")
             if s:
                 picks.append(f'<a href="{rel(here, DOCS / "site" / (s["slug"] + ".html"))}">{esc(s["name"])}</a> <span class="muted">({esc(s.get("hours",""))})</span>')
-        rows.append(f"""<div class="card">
+        rows.append(f"""<div class="card" id="day{w['day']}">
   <div class="row"><strong><a href="day/{w['day']:02d}.html">Day {w['day']}</a></strong> <span class="muted">{esc(w['date'])} {esc(w['dow'])} · {esc(w['window'])}</span> <span class="verdict {esc(w['verdict'])}">{esc(w['verdict'])}</span></div>
   <p><strong>{esc(w.get('approx',''))}</strong> · {esc(w.get('amount',''))}<br><span class="muted">{esc(w.get('basis',''))}</span></p>
   {('<p>' + '<br>'.join(picks) + '</p>') if picks else ''}
