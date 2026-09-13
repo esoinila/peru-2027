@@ -108,6 +108,22 @@
     ta.addEventListener("input", () => localStorage.setItem(key, ta.value));
   });
 
+  const tiles = document.querySelectorAll("details.daytile");
+  if (tiles.length) {
+    let openSet = {};
+    try { openSet = JSON.parse(localStorage.getItem("tiles:open") || "{}"); } catch (e) {}
+    const cur = window.TRIP_STATE && window.TRIP_STATE.n;
+    tiles.forEach(t => {
+      const k = t.getAttribute("data-day");
+      if (openSet[k] || (String(cur) === k && !Object.keys(openSet).length)) t.open = true;
+      t.addEventListener("toggle", () => { openSet[k] = t.open ? 1 : 0; localStorage.setItem("tiles:open", JSON.stringify(openSet)); });
+    });
+    document.querySelectorAll("[data-tiles]").forEach(b => b.addEventListener("click", () => {
+      const on = b.getAttribute("data-tiles") === "open";
+      tiles.forEach(t => { t.open = on; });
+    }));
+  }
+
   if ("serviceWorker" in navigator) {
     const swUrl = document.querySelector("html") && (function(){
       const scripts = document.querySelectorAll("script[src]");

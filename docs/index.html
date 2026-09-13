@@ -21,138 +21,237 @@
 <script type="application/json" id="trip-days-json">[{"n": 1, "date": "2027-03-04", "title": "Helsinki \u2192 Lima", "altitude_m": 0, "free": [{"from": "evening", "note": "Arrive; evening in Miraflores if energy allows"}], "hotelName": "Del Pilar Miraflores"}, {"n": 2, "date": "2027-03-05", "title": "Lima old town + Larco", "altitude_m": 0, "free": [{"from": "evening", "note": "Huaca Pucllana night lights; Huaca Huallamarca in San Isidro"}], "hotelName": "Del Pilar Miraflores"}, {"n": 3, "date": "2027-03-06", "title": "Fly to Cusco \u2192 Sacred Valley \u2192 Ollantaytambo", "altitude_m": 2900, "free": [{"from": "evening", "note": "Late afternoon + evening in Ollantaytambo; ruins gate 5 min"}], "hotelName": "Sol Ollantay Valle"}, {"n": 4, "date": "2027-03-07", "title": "Abra M\u00e1laga \u2192 Huamanmarca \u2192 Quillabamba", "altitude_m": 1000, "free": [{"from": "evening", "note": "Late afternoon + evening in Quillabamba"}], "hotelName": "Hotel Purakilla"}, {"n": 5, "date": "2027-03-08", "title": "Tunkimayo + cacao \u2192 back to Ollantaytambo", "altitude_m": 2900, "free": [{"from": "evening", "note": "Evening in Ollantaytambo"}], "hotelName": "Sol Ollantay Valle"}, {"n": 6, "date": "2027-03-09", "title": "Machu Picchu", "altitude_m": 2430, "free": [{"from": "evening", "note": "Evening back in Ollantaytambo"}], "hotelName": "Sol Ollantay Valle"}, {"n": 7, "date": "2027-03-10", "title": "Maras + Moray", "altitude_m": 2900, "free": [{"from": "afternoon", "note": "Kachiqhata quarry 3\u20134 h round trip if back by ~14:00; or \u00d1aupa Iglesia"}], "hotelName": "Sol Ollantay Valle"}, {"n": 8, "date": "2027-03-11", "title": "Cusco + Sacsayhuam\u00e1n", "altitude_m": 3400, "free": [{"from": "afternoon", "note": "Quespehuara, Q'enqo, Coricancha, Hatun Rumiyoc, museums"}], "hotelName": "Tierra Viva Centro"}, {"n": 9, "date": "2027-03-12", "title": "Free day Cusco (or Rainbow Mountain)", "altitude_m": 3400, "free": [{"from": "morning", "note": "South Valley (Tip\u00f3n, Piquillacta, Rumicolca) or Chinchero + Huchuy Qosqo"}], "hotelName": "Tierra Viva Centro"}, {"n": 10, "date": "2027-03-13", "title": "Cusco \u2192 Raqch'i \u2192 Pukara \u2192 Puno", "altitude_m": 3812, "free": [{"from": "evening", "note": "Sillustani taxi only if energy + daylight; ask leader"}], "hotelName": "La Hacienda Plaza de Armas"}, {"n": 11, "date": "2027-03-14", "title": "Lake Titicaca: Uros + Taquile", "altitude_m": 3812, "free": [{"from": "evening", "note": "Evening in Puno. Puma Punku is across the Bolivian border \u2014 not realistic on this schedule."}], "hotelName": "La Hacienda Plaza de Armas"}, {"n": 12, "date": "2027-03-15", "title": "Juliaca \u2192 Lima \u2192 onward flight", "altitude_m": 0, "free": [{"from": "morning", "note": "Sillustani only if Juliaca flight is late \u2014 ask the leader first"}], "hotelName": null}, {"n": 13, "date": "2027-03-16", "title": "In transit", "altitude_m": 0, "free": [], "hotelName": null}, {"n": 14, "date": "2027-03-17", "title": "Arrive Helsinki", "altitude_m": 0, "free": [], "hotelName": null}]</script>
 <script type="application/json" id="trip-photo-slots-json">["Huaca Pucllana", "Huaca Huallamarca", "Larco Museum", "Ollantaytambo \u2014 Temple of the Sun / Wall of the Six Monoliths", "Piedras cansadas \u2014 tired stones", "Kachiqhata quarry", "Pinkuylluna storehouses", "\u00d1aupa Iglesia / Choquequilla", "Huamanmarca", "Machu Picchu", "Moray terraces", "Maras salt pans", "Sacsayhuam\u00e1n", "Quespehuara / Qhespewara huacas", "Q'enqo", "Tambomachay / Puka Pukara", "Coricancha / Qorikancha", "Hatun Rumiyoc / 12-angled stone", "Museo Inka", "Tip\u00f3n", "Piquillacta", "Rumicolca", "Chinchero", "Raqch'i \u2014 Temple of Wiracocha", "Pukara museum", "Sillustani chullpas"]</script>
 <div data-today-card></div>
-<h2 id="days">Days</h2>
-<a class="card programme" href="day/01.html" style="display:block;text-decoration:none;color:inherit">
-          <div class="row"><span class="badge prog">programme</span> <strong>Day 1</strong> <span class="muted">2027-03-04</span></div>
-          <h3>Helsinki → Lima</h3>
-          <p class="muted">Del Pilar Miraflores · 0 m</p>
-          <p><span class="badge meal none">no meals</span><span class="badge free">free ~21:00–23:30 · ~2.5 h</span></p>
-        </a><a class="card freebox none" href="windows.html#day1" style="display:block;text-decoration:none;color:inherit">
+<h2 id="days">Days <span class="tilectl"><button type="button" data-tiles="open">expand all</button> <button type="button" data-tiles="close">collapse all</button></span></h2>
+<p class="muted">Tap a day to expand. Free = estimated window, hours counted until 23:30 (bed before midnight).</p>
+<details class="daytile" data-day="1">
+          <summary class="card programme">
+            <div class="row"><strong>Day 1</strong> <span class="muted">03-04</span> <span class="chev">▸</span></div>
+            <h3>Helsinki → Lima</h3>
+            <p><span class="badge meal none">no meals</span><span class="badge free">free ~21:00–23:30 · ~2.5 h</span></p>
+          </summary>
+          <div class="card programme detail">
+            <p class="muted">Del Pilar Miraflores · 0 m</p>
+            <ul class="timeline"><li>HEL → LIM (one stop)</li><li>Transfer to Miraflores; hotel Del Pilar (by Kennedy Park) or similar</li></ul>
+            <p><a class="btn" href="day/01.html">Open day 1</a></p>
+          </div>
+          <a class="card freebox none" href="windows.html#day1" style="display:block;text-decoration:none;color:inherit">
           <div class="row"><span class="badge free">FREE TIME</span> <span class="verdict none">none</span></div>
           <h3>~21:00–23:30 <span class="muted">· ~2.5 h</span></h3>
           <p class="muted">0 h daylight · after flight; walk only · bed before midnight</p>
           
-        </a><a class="card programme" href="day/02.html" style="display:block;text-decoration:none;color:inherit">
-          <div class="row"><span class="badge prog">programme</span> <strong>Day 2</strong> <span class="muted">2027-03-05</span></div>
-          <h3>Lima old town + Larco</h3>
-          <p class="muted">Del Pilar Miraflores · 0 m</p>
-          <p><span class="badge meal">breakfast</span><span class="badge meal">lunch</span><span class="badge meal find">find dinner</span><span class="badge free">free ~17:00–23:30 · ~6.5 h</span></p>
-        </a><a class="card freebox maybe" href="windows.html#day2" style="display:block;text-decoration:none;color:inherit">
+        </a>
+        </details><details class="daytile" data-day="2">
+          <summary class="card programme">
+            <div class="row"><strong>Day 2</strong> <span class="muted">03-05</span> <span class="chev">▸</span></div>
+            <h3>Lima old town + Larco</h3>
+            <p><span class="badge meal">breakfast</span><span class="badge meal">lunch</span><span class="badge meal find">find dinner</span><span class="badge free">free ~17:00–23:30 · ~6.5 h</span></p>
+          </summary>
+          <div class="card programme detail">
+            <p class="muted">Del Pilar Miraflores · 0 m</p>
+            <ul class="timeline"><li>Lima old town: Plaza de Armas, cathedral</li><li>San Francisco church + catacombs (25 000 burials, rediscovered 1943)</li><li>Larco Museum (Pueblo Libre) — pre-Inca ceramics + gold</li><li>Lunch included</li></ul>
+            <p><a class="btn" href="day/02.html">Open day 2</a></p>
+          </div>
+          <a class="card freebox maybe" href="windows.html#day2" style="display:block;text-decoration:none;color:inherit">
           <div class="row"><span class="badge free">FREE TIME</span> <span class="verdict maybe">maybe</span></div>
           <h3>~17:00–23:30 <span class="muted">· ~6.5 h</span></h3>
           <p class="muted">~1 h daylight · tour ends ~16–17 · bed before midnight</p>
           <p><strong>Huaca Pucllana</strong></p>
-        </a><a class="card programme" href="day/03.html" style="display:block;text-decoration:none;color:inherit">
-          <div class="row"><span class="badge prog">programme</span> <strong>Day 3</strong> <span class="muted">2027-03-06</span></div>
-          <h3>Fly to Cusco → Sacred Valley → Ollantaytambo</h3>
-          <p class="muted">Sol Ollantay Valle · 2900 m</p>
-          <p><span class="badge meal">breakfast</span><span class="badge meal">lunch</span><span class="badge meal find">find dinner</span><span class="badge free">free ~16:00–23:30 · ~7.5 h</span></p>
-        </a><a class="card freebox good" href="windows.html#day3" style="display:block;text-decoration:none;color:inherit">
+        </a>
+        </details><details class="daytile" data-day="3">
+          <summary class="card programme">
+            <div class="row"><strong>Day 3</strong> <span class="muted">03-06</span> <span class="chev">▸</span></div>
+            <h3>Fly to Cusco → Sacred Valley → Ollantaytambo</h3>
+            <p><span class="badge meal">breakfast</span><span class="badge meal">lunch</span><span class="badge meal find">find dinner</span><span class="badge free">free ~16:00–23:30 · ~7.5 h</span></p>
+          </summary>
+          <div class="card programme detail">
+            <p class="muted">Sol Ollantay Valle · 2900 m</p>
+            <ul class="timeline"><li>Fly LIM → CUZ (Cusco 3 400 m)</li><li>Drive straight down to the Sacred Valley (2 900 m)</li><li>Afternoon arrival Ollantaytambo; old-town walk</li><li>Lunch included</li></ul>
+            <p><a class="btn" href="day/03.html">Open day 3</a></p>
+          </div>
+          <a class="card freebox good" href="windows.html#day3" style="display:block;text-decoration:none;color:inherit">
           <div class="row"><span class="badge free">FREE TIME</span> <span class="verdict good">good</span></div>
           <h3>~16:00–23:30 <span class="muted">· ~7.5 h</span></h3>
           <p class="muted">~2 h daylight · afternoon town walk ends · bed before midnight</p>
           <p><strong>Pinkuylluna storehouses</strong></p>
-        </a><a class="card programme" href="day/04.html" style="display:block;text-decoration:none;color:inherit">
-          <div class="row"><span class="badge prog">programme</span> <strong>Day 4</strong> <span class="muted">2027-03-07</span></div>
-          <h3>Abra Málaga → Huamanmarca → Quillabamba</h3>
-          <p class="muted">Hotel Purakilla · 1000 m</p>
-          <p><span class="badge meal">breakfast</span><span class="badge meal">lunch</span><span class="badge meal find">find dinner</span><span class="badge free">free ~17:00–23:30 · ~6.5 h</span></p>
-        </a><a class="card freebox none" href="windows.html#day4" style="display:block;text-decoration:none;color:inherit">
+        </a>
+        </details><details class="daytile" data-day="4">
+          <summary class="card programme">
+            <div class="row"><strong>Day 4</strong> <span class="muted">03-07</span> <span class="chev">▸</span></div>
+            <h3>Abra Málaga → Huamanmarca → Quillabamba</h3>
+            <p><span class="badge meal">breakfast</span><span class="badge meal">lunch</span><span class="badge meal find">find dinner</span><span class="badge free">free ~17:00–23:30 · ~6.5 h</span></p>
+          </summary>
+          <div class="card programme detail">
+            <p class="muted">Hotel Purakilla · 1000 m</p>
+            <ul class="timeline"><li>Ollantaytambo → Abra Málaga (4 316 m; coffee, Verónica glacier view)</li><li>Alfamayo viewpoint</li><li>Huamanmarca archaeological site (usnu, four double doorways to the cardinal points)</li><li>Huayopata-Calquiña tea plantation</li></ul>
+            <p><a class="btn" href="day/04.html">Open day 4</a></p>
+          </div>
+          <a class="card freebox none" href="windows.html#day4" style="display:block;text-decoration:none;color:inherit">
           <div class="row"><span class="badge free">FREE TIME</span> <span class="verdict none">none</span></div>
           <h3>~17:00–23:30 <span class="muted">· ~6.5 h</span></h3>
           <p class="muted">~1 h daylight · Quillabamba late afternoon · bed before midnight</p>
           
-        </a><a class="card programme" href="day/05.html" style="display:block;text-decoration:none;color:inherit">
-          <div class="row"><span class="badge prog">programme</span> <strong>Day 5</strong> <span class="muted">2027-03-08</span></div>
-          <h3>Tunkimayo + cacao → back to Ollantaytambo</h3>
-          <p class="muted">Sol Ollantay Valle · 2900 m</p>
-          <p><span class="badge meal">breakfast</span><span class="badge meal">lunch</span><span class="badge meal find">find dinner</span><span class="badge free">free ~17:00–23:30 · ~6.5 h</span></p>
-        </a><a class="card freebox low" href="windows.html#day5" style="display:block;text-decoration:none;color:inherit">
+        </a>
+        </details><details class="daytile" data-day="5">
+          <summary class="card programme">
+            <div class="row"><strong>Day 5</strong> <span class="muted">03-08</span> <span class="chev">▸</span></div>
+            <h3>Tunkimayo + cacao → back to Ollantaytambo</h3>
+            <p><span class="badge meal">breakfast</span><span class="badge meal">lunch</span><span class="badge meal find">find dinner</span><span class="badge free">free ~17:00–23:30 · ~6.5 h</span></p>
+          </summary>
+          <div class="card programme detail">
+            <p class="muted">Sol Ollantay Valle · 2900 m</p>
+            <ul class="timeline"><li>04:00 start → Tunkimayo reserve (Chuyapi river, ~2 000 m; cock-of-the-rock lek)</li><li>Breakfast</li><li>Chuncho cacao farm</li><li>Return to Ollantaytambo</li></ul>
+            <p><a class="btn" href="day/05.html">Open day 5</a></p>
+          </div>
+          <a class="card freebox low" href="windows.html#day5" style="display:block;text-decoration:none;color:inherit">
           <div class="row"><span class="badge free">FREE TIME</span> <span class="verdict low">low</span></div>
           <h3>~17:00–23:30 <span class="muted">· ~6.5 h</span></h3>
           <p class="muted">~1 h daylight · 04:00 start, count on 2–3 h · back from Tunkimayo + cacao · bed before midnight</p>
           <p><strong>Piedras cansadas — tired stones</strong></p>
-        </a><a class="card programme" href="day/06.html" style="display:block;text-decoration:none;color:inherit">
-          <div class="row"><span class="badge prog">programme</span> <strong>Day 6</strong> <span class="muted">2027-03-09</span></div>
-          <h3>Machu Picchu</h3>
-          <p class="muted">Sol Ollantay Valle · 2430 m</p>
-          <p><span class="badge meal">breakfast</span><span class="badge meal find">find dinner</span><span class="badge free">free ~18:30–23:30 · ~5 h</span></p>
-        </a><a class="card freebox low" href="windows.html#day6" style="display:block;text-decoration:none;color:inherit">
+        </a>
+        </details><details class="daytile" data-day="6">
+          <summary class="card programme">
+            <div class="row"><strong>Day 6</strong> <span class="muted">03-09</span> <span class="chev">▸</span></div>
+            <h3>Machu Picchu</h3>
+            <p><span class="badge meal">breakfast</span><span class="badge meal find">find dinner</span><span class="badge free">free ~18:30–23:30 · ~5 h</span></p>
+          </summary>
+          <div class="card programme detail">
+            <p class="muted">Sol Ollantay Valle · 2430 m</p>
+            <ul class="timeline"><li>Train Ollantaytambo → Aguas Calientes</li><li>Machu Picchu (2 430 m), ≥3 h on site (group may split; omatoimisesti after the tour)</li><li>Train back late afternoon</li></ul>
+            <p><a class="btn" href="day/06.html">Open day 6</a></p>
+          </div>
+          <a class="card freebox low" href="windows.html#day6" style="display:block;text-decoration:none;color:inherit">
           <div class="row"><span class="badge free">FREE TIME</span> <span class="verdict low">low</span></div>
           <h3>~18:30–23:30 <span class="muted">· ~5 h</span></h3>
           <p class="muted">0 h daylight · train back late afternoon · bed before midnight</p>
           
-        </a><a class="card programme" href="day/07.html" style="display:block;text-decoration:none;color:inherit">
-          <div class="row"><span class="badge prog">programme</span> <strong>Day 7</strong> <span class="muted">2027-03-10</span></div>
-          <h3>Maras + Moray</h3>
-          <p class="muted">Sol Ollantay Valle · 2900 m</p>
-          <p><span class="badge meal">breakfast</span><span class="badge meal">lunch</span><span class="badge meal find">find dinner</span><span class="badge free">free ~14:30–23:30 · ~9 h</span></p>
-        </a><a class="card freebox best" href="windows.html#day7" style="display:block;text-decoration:none;color:inherit">
+        </a>
+        </details><details class="daytile" data-day="7">
+          <summary class="card programme">
+            <div class="row"><strong>Day 7</strong> <span class="muted">03-10</span> <span class="chev">▸</span></div>
+            <h3>Maras + Moray</h3>
+            <p><span class="badge meal">breakfast</span><span class="badge meal">lunch</span><span class="badge meal find">find dinner</span><span class="badge free">free ~14:30–23:30 · ~9 h</span></p>
+          </summary>
+          <div class="card programme detail">
+            <p class="muted">Sol Ollantay Valle · 2900 m</p>
+            <ul class="timeline"><li>Maras salt pans (~3 000 pans)</li><li>Moray terraces</li><li>Misminay village lunch</li><li>Return; afternoon/evening free</li></ul>
+            <p><a class="btn" href="day/07.html">Open day 7</a></p>
+          </div>
+          <a class="card freebox best" href="windows.html#day7" style="display:block;text-decoration:none;color:inherit">
           <div class="row"><span class="badge free">FREE TIME</span> <span class="verdict best">best</span></div>
           <h3>~14:30–23:30 <span class="muted">· ~9 h</span></h3>
           <p class="muted">~4 h daylight · Maras + Moray + lunch · bed before midnight</p>
           <p><strong>Kachiqhata quarry / Ñaupa Iglesia / Choquequilla</strong></p>
-        </a><a class="card programme" href="day/08.html" style="display:block;text-decoration:none;color:inherit">
-          <div class="row"><span class="badge prog">programme</span> <strong>Day 8</strong> <span class="muted">2027-03-11</span></div>
-          <h3>Cusco + Sacsayhuamán</h3>
-          <p class="muted">Tierra Viva Centro · 3400 m</p>
-          <p><span class="badge meal">breakfast</span><span class="badge meal find">find dinner</span><span class="badge free">free ~14:00–23:30 · ~9.5 h</span></p>
-        </a><a class="card freebox best" href="windows.html#day8" style="display:block;text-decoration:none;color:inherit">
+        </a>
+        </details><details class="daytile" data-day="8">
+          <summary class="card programme">
+            <div class="row"><strong>Day 8</strong> <span class="muted">03-11</span> <span class="chev">▸</span></div>
+            <h3>Cusco + Sacsayhuamán</h3>
+            <p><span class="badge meal">breakfast</span><span class="badge meal find">find dinner</span><span class="badge free">free ~14:00–23:30 · ~9.5 h</span></p>
+          </summary>
+          <div class="card programme detail">
+            <p class="muted">Tierra Viva Centro · 3400 m</p>
+            <ul class="timeline"><li>Drive to Cusco (3 400 m)</li><li>San Pedro market</li><li>Sacsayhuamán</li><li>Rest of the day free; hotel walking distance from Plaza (Tierra Viva Centro)</li></ul>
+            <p><a class="btn" href="day/08.html">Open day 8</a></p>
+          </div>
+          <a class="card freebox best" href="windows.html#day8" style="display:block;text-decoration:none;color:inherit">
           <div class="row"><span class="badge free">FREE TIME</span> <span class="verdict best">best</span></div>
           <h3>~14:00–23:30 <span class="muted">· ~9.5 h</span></h3>
           <p class="muted">~4 h daylight · after Sacsayhuamán · bed before midnight</p>
           <p><strong>Coricancha / Qorikancha / Museo de Arte Precolombino (MAP)</strong></p>
-        </a><a class="card programme" href="day/09.html" style="display:block;text-decoration:none;color:inherit">
-          <div class="row"><span class="badge prog">programme</span> <strong>Day 9</strong> <span class="muted">2027-03-12</span></div>
-          <h3>Free day Cusco (or Rainbow Mountain)</h3>
-          <p class="muted">Tierra Viva Centro · 3400 m</p>
-          <p><span class="badge meal">breakfast</span><span class="badge meal find">find dinner</span><span class="badge free">free ~08:00–23:30 · ~15.5 h</span></p>
-        </a><a class="card freebox best" href="windows.html#day9" style="display:block;text-decoration:none;color:inherit">
+        </a>
+        </details><details class="daytile" data-day="9">
+          <summary class="card programme">
+            <div class="row"><strong>Day 9</strong> <span class="muted">03-12</span> <span class="chev">▸</span></div>
+            <h3>Free day Cusco (or Rainbow Mountain)</h3>
+            <p><span class="badge meal">breakfast</span><span class="badge meal find">find dinner</span><span class="badge free">free ~08:00–23:30 · ~15.5 h</span></p>
+          </summary>
+          <div class="card programme detail">
+            <p class="muted">Tierra Viva Centro · 3400 m</p>
+            <ul class="timeline"><li>Full free day in Cusco</li><li>Or Rainbow Mountain add-on (Vinicunca 5 200 m; 04:00; 158 €/178 €; min 8; book ≥60 days; PDF: April–November only — confirm for March)</li></ul>
+            <p><a class="btn" href="day/09.html">Open day 9</a></p>
+          </div>
+          <a class="card freebox best" href="windows.html#day9" style="display:block;text-decoration:none;color:inherit">
           <div class="row"><span class="badge free">FREE TIME</span> <span class="verdict best">best</span></div>
           <h3>~08:00–23:30 <span class="muted">· ~15.5 h</span></h3>
           <p class="muted">~10 h daylight · full free day · bed before midnight</p>
           <p><strong>Tipón / Museo Inka</strong></p>
-        </a><a class="card programme" href="day/10.html" style="display:block;text-decoration:none;color:inherit">
-          <div class="row"><span class="badge prog">programme</span> <strong>Day 10</strong> <span class="muted">2027-03-13</span></div>
-          <h3>Cusco → Raqch'i → Pukara → Puno</h3>
-          <p class="muted">La Hacienda Plaza de Armas · 3812 m</p>
-          <p><span class="badge meal">breakfast</span><span class="badge meal">lunch</span><span class="badge meal find">find dinner</span><span class="badge free">free ~18:00–23:30 · ~5.5 h</span></p>
-        </a><a class="card freebox none" href="windows.html#day10" style="display:block;text-decoration:none;color:inherit">
+        </a>
+        </details><details class="daytile" data-day="10">
+          <summary class="card programme">
+            <div class="row"><strong>Day 10</strong> <span class="muted">03-13</span> <span class="chev">▸</span></div>
+            <h3>Cusco → Raqch'i → Pukara → Puno</h3>
+            <p><span class="badge meal">breakfast</span><span class="badge meal">lunch</span><span class="badge meal find">find dinner</span><span class="badge free">free ~18:00–23:30 · ~5.5 h</span></p>
+          </summary>
+          <div class="card programme detail">
+            <p class="muted">La Hacienda Plaza de Armas · 3812 m</p>
+            <ul class="timeline"><li>Longest drive, across the altiplano</li><li>Raqch'i — Temple of Wiracocha (92 m × 20 m wall, 4 km enclosure)</li><li>Lunch</li><li>Pukara museum (monoliths)</li></ul>
+            <p><a class="btn" href="day/10.html">Open day 10</a></p>
+          </div>
+          <a class="card freebox none" href="windows.html#day10" style="display:block;text-decoration:none;color:inherit">
           <div class="row"><span class="badge free">FREE TIME</span> <span class="verdict none">none</span></div>
           <h3>~18:00–23:30 <span class="muted">· ~5.5 h</span></h3>
           <p class="muted">0 h daylight · Puno at dusk · bed before midnight</p>
           
-        </a><a class="card programme" href="day/11.html" style="display:block;text-decoration:none;color:inherit">
-          <div class="row"><span class="badge prog">programme</span> <strong>Day 11</strong> <span class="muted">2027-03-14</span></div>
-          <h3>Lake Titicaca: Uros + Taquile</h3>
-          <p class="muted">La Hacienda Plaza de Armas · 3812 m</p>
-          <p><span class="badge meal">breakfast</span><span class="badge meal">lunch</span><span class="badge meal find">find dinner</span><span class="badge free">free ~16:30–23:30 · ~7 h</span></p>
-        </a><a class="card freebox none" href="windows.html#day11" style="display:block;text-decoration:none;color:inherit">
+        </a>
+        </details><details class="daytile" data-day="11">
+          <summary class="card programme">
+            <div class="row"><strong>Day 11</strong> <span class="muted">03-14</span> <span class="chev">▸</span></div>
+            <h3>Lake Titicaca: Uros + Taquile</h3>
+            <p><span class="badge meal">breakfast</span><span class="badge meal">lunch</span><span class="badge meal find">find dinner</span><span class="badge free">free ~16:30–23:30 · ~7 h</span></p>
+          </summary>
+          <div class="card programme detail">
+            <p class="muted">La Hacienda Plaza de Armas · 3812 m</p>
+            <ul class="timeline"><li>Uros floating islands</li><li>Taquile (Collata village, 45 min), family lunch, hill walk</li><li>Back late afternoon</li></ul>
+            <p><a class="btn" href="day/11.html">Open day 11</a></p>
+          </div>
+          <a class="card freebox none" href="windows.html#day11" style="display:block;text-decoration:none;color:inherit">
           <div class="row"><span class="badge free">FREE TIME</span> <span class="verdict none">none</span></div>
           <h3>~16:30–23:30 <span class="muted">· ~7 h</span></h3>
           <p class="muted">~1.5 h daylight · back from Taquile · bed before midnight</p>
           
-        </a><a class="card programme" href="day/12.html" style="display:block;text-decoration:none;color:inherit">
-          <div class="row"><span class="badge prog">programme</span> <strong>Day 12</strong> <span class="muted">2027-03-15</span></div>
-          <h3>Juliaca → Lima → onward flight</h3>
-          <p class="muted">in transit · 0 m</p>
-          <p><span class="badge meal">breakfast</span><span class="badge meal find">find dinner</span><span class="badge free">free ~08:00–flight · 0–4 h</span></p>
-        </a><a class="card freebox maybe" href="windows.html#day12" style="display:block;text-decoration:none;color:inherit">
+        </a>
+        </details><details class="daytile" data-day="12">
+          <summary class="card programme">
+            <div class="row"><strong>Day 12</strong> <span class="muted">03-15</span> <span class="chev">▸</span></div>
+            <h3>Juliaca → Lima → onward flight</h3>
+            <p><span class="badge meal">breakfast</span><span class="badge meal find">find dinner</span><span class="badge free">free ~08:00–flight · 0–4 h</span></p>
+          </summary>
+          <div class="card programme detail">
+            <p class="muted">in transit · 0 m</p>
+            <ul class="timeline"><li>Juliaca → Lima → onward flight home</li></ul>
+            <p><a class="btn" href="day/12.html">Open day 12</a></p>
+          </div>
+          <a class="card freebox maybe" href="windows.html#day12" style="display:block;text-decoration:none;color:inherit">
           <div class="row"><span class="badge free">FREE TIME</span> <span class="verdict maybe">maybe</span></div>
           <h3>~08:00–flight <span class="muted">· 0–4 h</span></h3>
           <p class="muted">depends on Juliaca flight · ask leader day 10 · bed before midnight</p>
           <p><strong>Sillustani chullpas</strong></p>
-        </a><a class="card programme" href="day/13.html" style="display:block;text-decoration:none;color:inherit">
-          <div class="row"><span class="badge prog">programme</span> <strong>Day 13</strong> <span class="muted">2027-03-16</span></div>
-          <h3>In transit</h3>
-          <p class="muted">in transit · 0 m</p>
-          <p><span class="badge meal none">no meals</span></p>
-        </a><a class="card programme" href="day/14.html" style="display:block;text-decoration:none;color:inherit">
-          <div class="row"><span class="badge prog">programme</span> <strong>Day 14</strong> <span class="muted">2027-03-17</span></div>
-          <h3>Arrive Helsinki</h3>
-          <p class="muted">in transit · 0 m</p>
-          <p><span class="badge meal none">no meals</span></p>
         </a>
+        </details><details class="daytile" data-day="13">
+          <summary class="card programme">
+            <div class="row"><strong>Day 13</strong> <span class="muted">03-16</span> <span class="chev">▸</span></div>
+            <h3>In transit</h3>
+            <p><span class="badge meal none">no meals</span></p>
+          </summary>
+          <div class="card programme detail">
+            <p class="muted">in transit · 0 m</p>
+            <ul class="timeline"><li>In transit (one stop)</li></ul>
+            <p><a class="btn" href="day/13.html">Open day 13</a></p>
+          </div>
+          
+        </details><details class="daytile" data-day="14">
+          <summary class="card programme">
+            <div class="row"><strong>Day 14</strong> <span class="muted">03-17</span> <span class="chev">▸</span></div>
+            <h3>Arrive Helsinki</h3>
+            <p><span class="badge meal none">no meals</span></p>
+          </summary>
+          <div class="card programme detail">
+            <p class="muted">in transit · 0 m</p>
+            <ul class="timeline"><li>Arrive Helsinki</li></ul>
+            <p><a class="btn" href="day/14.html">Open day 14</a></p>
+          </div>
+          
+        </details>
 <p><a href="packing.html">Packing</a> · <a href="sites.html">All sites</a> · <a href="windows.html">Free-time windows</a></p>
 <script>
 window.TRIP_TZ = "America/Lima";

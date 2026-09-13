@@ -266,6 +266,17 @@ a { color: var(--accent2); }
 .verdict.maybe { background: #3a2a12; color: var(--accent); }
 .verdict.low, .verdict.none { background: #2a2020; color: var(--muted); }
 .card.programme { border-left: 4px solid var(--line); }
+details.daytile > summary { list-style: none; cursor: pointer; }
+details.daytile > summary::-webkit-details-marker { display: none; }
+details.daytile > summary h3 { margin: 4px 0; }
+details.daytile > summary p { margin: 4px 0 0; }
+details.daytile .chev { margin-left: auto; color: var(--muted); transition: transform .15s; }
+details.daytile[open] .chev { transform: rotate(90deg); }
+details.daytile[open] > summary { border-bottom-left-radius: 0; border-bottom-right-radius: 0; margin-bottom: 0; }
+details.daytile .card.detail { border-top: 0; border-top-left-radius: 0; border-top-right-radius: 0; }
+details.daytile .card.detail .timeline { margin: 6px 0; }
+.tilectl { float: right; font-size: 0.75rem; font-weight: 400; }
+.tilectl button { background: var(--bg2); color: var(--muted); border: 1px solid var(--line); border-radius: 999px; padding: 3px 9px; font-size: 0.75rem; }
 .badge.prog { background: var(--bg2); color: var(--muted); }
 .badge.meal { background: #1e2a1e; color: #bfe0bf; }
 .badge.meal.find { background: #3a2a12; color: var(--accent); }
@@ -428,6 +439,22 @@ APP_JS = r"""
     ta.addEventListener("input", () => localStorage.setItem(key, ta.value));
   });
 
+  const tiles = document.querySelectorAll("details.daytile");
+  if (tiles.length) {
+    let openSet = {};
+    try { openSet = JSON.parse(localStorage.getItem("tiles:open") || "{}"); } catch (e) {}
+    const cur = window.TRIP_STATE && window.TRIP_STATE.n;
+    tiles.forEach(t => {
+      const k = t.getAttribute("data-day");
+      if (openSet[k] || (String(cur) === k && !Object.keys(openSet).length)) t.open = true;
+      t.addEventListener("toggle", () => { openSet[k] = t.open ? 1 : 0; localStorage.setItem("tiles:open", JSON.stringify(openSet)); });
+    });
+    document.querySelectorAll("[data-tiles]").forEach(b => b.addEventListener("click", () => {
+      const on = b.getAttribute("data-tiles") === "open";
+      tiles.forEach(t => { t.open = on; });
+    }));
+  }
+
   if ("serviceWorker" in navigator) {
     const swUrl = document.querySelector("html") && (function(){
       const scripts = document.querySelectorAll("script[src]");
@@ -526,24 +553,33 @@ def generate_pages(trip, pins):
     for d in trip["days"]:
         h = hotels.get(d.get("hotel") or "")
         w = wins.get(d["n"])
-        free_badge = f'<span class="badge free">free {esc(w["approx"])} · {esc(w["hours"])}</span>' if w else ""
         href = f'day/{d["n"]:02d}.html'
-        day_cards.append(f"""<a class="card programme" href="{href}" style="display:block;text-decoration:none;color:inherit">
-          <div class="row"><span class="badge prog">programme</span> <strong>Day {d["n"]}</strong> <span class="muted">{esc(d["date"])}</span></div>
-          <h3>{esc(d["title"])}</h3>
-          <p class="muted">{esc(h["name"] if h else "in transit")} · {d["altitude_m"]} m</p>
-          <p>{meal_badges(d.get("meals"))}{free_badge}</p>
-        </a>""")
+        free_short = f'<span class="badge free">free {esc(w["approx"])} · {esc(w["hours"])}</span>' if w else ""
+        picks = ""
         if w:
             best = site_by_slug(trip, w.get("best") or "")
             alt = site_by_slug(trip, w.get("alt") or "")
             picks = " / ".join(esc(x["name"]) for x in (best, alt) if x)
-            day_cards.append(f"""<a class="card freebox {esc(w["verdict"])}" href="windows.html#day{d["n"]}" style="display:block;text-decoration:none;color:inherit">
+        freebox = f"""<a class="card freebox {esc(w["verdict"])}" href="windows.html#day{d["n"]}" style="display:block;text-decoration:none;color:inherit">
           <div class="row"><span class="badge free">FREE TIME</span> <span class="verdict {esc(w["verdict"])}">{esc(w["verdict"])}</span></div>
           <h3>{esc(w.get("approx",""))} <span class="muted">· {esc(w.get("hours",""))}</span></h3>
           <p class="muted">{esc(w.get("daylight",""))} · {esc(w.get("basis",""))}</p>
           {f'<p><strong>{picks}</strong></p>' if picks else ''}
-        </a>""")
+        </a>""" if w else ""
+        prog = "".join(f"<li>{esc(x)}</li>" for x in (d.get("programme") or [])[:4])
+        day_cards.append(f"""<details class="daytile" data-day="{d["n"]}">
+          <summary class="card programme">
+            <div class="row"><strong>Day {d["n"]}</strong> <span class="muted">{esc(d["date"][5:])}</span> <span class="chev">▸</span></div>
+            <h3>{esc(d["title"])}</h3>
+            <p>{meal_badges(d.get("meals"))}{free_short}</p>
+          </summary>
+          <div class="card programme detail">
+            <p class="muted">{esc(h["name"] if h else "in transit")} · {d["altitude_m"]} m</p>
+            <ul class="timeline">{prog}</ul>
+            <p><a class="btn" href="{href}">Open day {d["n"]}</a></p>
+          </div>
+          {freebox}
+        </details>""")
     hero = ""
     for name in ["albatros-p02-1.jpg", "albatros-p02-2.jpg", "albatros-p03-1.jpg"]:
         p = DOCS / "img" / name
@@ -558,7 +594,8 @@ def generate_pages(trip, pins):
 <script type="application/json" id="trip-days-json">{json.dumps(days_json)}</script>
 <script type="application/json" id="trip-photo-slots-json">{json.dumps(photo_slots)}</script>
 <div data-today-card></div>
-<h2 id="days">Days</h2>
+<h2 id="days">Days <span class="tilectl"><button type="button" data-tiles="open">expand all</button> <button type="button" data-tiles="close">collapse all</button></span></h2>
+<p class="muted">Tap a day to expand. Free = estimated window, hours counted until 23:30 (bed before midnight).</p>
 {''.join(day_cards)}
 <p><a href="packing.html">Packing</a> · <a href="sites.html">All sites</a> · <a href="windows.html">Free-time windows</a></p>
 <script>
