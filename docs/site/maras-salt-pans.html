@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#1c120c">
+<title>Maras salt pans · Peru 2027</title>
+<link rel="manifest" href="../manifest.webmanifest">
+<link rel="icon" href="../img/icon-192.png">
+<link rel="apple-touch-icon" href="../img/icon-192.png">
+<link rel="stylesheet" href="../app.css">
+<link rel="stylesheet" href="../vendor/leaflet.css">
+</head>
+<body>
+<main class="wrap">
+
+<p class="muted"><a href="../sites.html">← Sites</a></p>
+<h1>Maras salt pans</h1>
+<p><span class="badge">ENG</span><span class="badge">PC</span> <span class="badge">approx</span></p>
+<h2>What it is</h2>
+<p>Pre-Inca. Hypersaline spring from a salt dome. One hand-cut channel feeding ~3 000 pans by gravity.</p>
+<h2>Look for</h2>
+<div data-look-for="maras-salt-pans" data-items='[&quot;Hand-cut feeder channel&quot;, &quot;Gravity feed across ~3 000 pans&quot;, &quot;Salt-dome spring&quot;]'></div>
+<p class="muted">On the group tour (day 7)</p>
+<p><strong>Hours:</strong> on the tour<br>
+<strong>Ticket:</strong> unverified — check on site</p>
+
+<div id="map" class="map"></div>
+<p class="map-actions">
+  <a class="btn" href="https://www.google.com/maps/dir/?api=1&amp;destination=-13.3294,-72.1567&amp;travelmode=walking">Open in Google Maps</a>
+  <a class="btn ghost" href="geo:-13.3294,-72.1567?q=-13.3294,-72.1567(Maras%20salt%20pans)">geo:</a>
+</p>
+
+<h2>My notes</h2>
+<textarea data-notes="maras-salt-pans" placeholder="Notes stay on this phone"></textarea>
+
+</main>
+<nav class="bottom-nav" aria-label="Main">
+  <a class="" href="../index.html">Today</a>
+  <a class="" href="../index.html#days">Days</a>
+  <a class="active" href="../sites.html">Sites</a>
+  <a class="" href="../hotels.html">Hotels</a>
+  <a class="" href="../contacts.html">Contacts</a>
+</nav>
+<script src="../app.js"></script>
+<script src="../vendor/leaflet.js"></script>
+<script>
+(function() {
+  var map = L.map('map', {zoomControl: true}).setView([-13.3294, -72.1567], 13);
+  L.tileLayer('../tiles/{z}/{x}/{y}.jpg', {
+    maxZoom: 16, minZoom: 12,
+    errorTileUrl: 'data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///ywAAAAAAQABAAACAUwAOw==',
+    attribution: 'Tiles © Esri, HERE, Garmin, © OpenStreetMap contributors'
+  }).addTo(map);
+  L.marker([-13.3294, -72.1567]).addTo(map).bindPopup("Maras salt pans");
+})();
+</script>
+</body>
+</html>

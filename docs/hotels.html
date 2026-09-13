@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#1c120c">
+<title>Hotels · Peru 2027</title>
+<link rel="manifest" href="manifest.webmanifest">
+<link rel="icon" href="img/icon-192.png">
+<link rel="apple-touch-icon" href="img/icon-192.png">
+<link rel="stylesheet" href="app.css">
+<link rel="stylesheet" href="vendor/leaflet.css">
+</head>
+<body>
+<main class="wrap">
+<h1>Hotels</h1><div class="card">
+          <h2>Del Pilar Miraflores</h2>
+          <p>Lima · 4–5 Mar</p>
+          <p>By Kennedy Park, Miraflores, Lima (or similar — confirmed ~7 days before)</p>
+          <p>phone: update when documents arrive</p>
+          <p class="muted">Confirmed with documents ~7 days before departure — update. Walk to Huaca Pucllana ~15 min.</p>
+          <div id="map-lima" class="map"></div>
+<p class="map-actions">
+  <a class="btn" href="https://www.google.com/maps/dir/?api=1&amp;destination=-12.1217,-77.0297&amp;travelmode=walking">Open in Google Maps</a>
+  <a class="btn ghost" href="geo:-12.1217,-77.0297?q=-12.1217,-77.0297(Del%20Pilar%20Miraflores)">geo:</a>
+</p>
+        </div><div class="card">
+          <h2>Sol Ollantay Valle</h2>
+          <p>Ollantaytambo · 6–7, 8–10 Mar (4 nights, split)</p>
+          <p>By Plaza de Armas, Ollantaytambo; walk to station (or similar)</p>
+          <p>phone: update when documents arrive</p>
+          <p class="muted">Best base. Ruins gate ~5 min. Confirmed ~7 days before.</p>
+          <div id="map-ollantaytambo" class="map"></div>
+<p class="map-actions">
+  <a class="btn" href="https://www.google.com/maps/dir/?api=1&amp;destination=-13.2586,-72.2633&amp;travelmode=walking">Open in Google Maps</a>
+  <a class="btn ghost" href="geo:-13.2586,-72.2633?q=-13.2586,-72.2633(Sol%20Ollantay%20Valle)">geo:</a>
+</p>
+        </div><div class="card">
+          <h2>Hotel Purakilla</h2>
+          <p>Quillabamba · 7 Mar</p>
+          <p>Quillabamba (or similar). Pool — pack swimwear.</p>
+          <p>phone: update when documents arrive</p>
+          <p class="muted">Confirmed ~7 days before.</p>
+          <div id="map-quillabamba" class="map"></div>
+<p class="map-actions">
+  <a class="btn" href="https://www.google.com/maps/dir/?api=1&amp;destination=-12.8628,-72.6928&amp;travelmode=walking">Open in Google Maps</a>
+  <a class="btn ghost" href="geo:-12.8628,-72.6928?q=-12.8628,-72.6928(Hotel%20Purakilla)">geo:</a>
+</p>
+        </div><div class="card">
+          <h2>Tierra Viva Centro</h2>
+          <p>Cusco · 11–12 Mar</p>
+          <p>Walking distance from Plaza de Armas, Cusco (or similar)</p>
+          <p>phone: update when documents arrive</p>
+          <p class="muted">Confirmed ~7 days before.</p>
+          <div id="map-cusco" class="map"></div>
+<p class="map-actions">
+  <a class="btn" href="https://www.google.com/maps/dir/?api=1&amp;destination=-13.5167,-71.9785&amp;travelmode=walking">Open in Google Maps</a>
+  <a class="btn ghost" href="geo:-13.5167,-71.9785?q=-13.5167,-71.9785(Tierra%20Viva%20Centro)">geo:</a>
+</p>
+        </div><div class="card">
+          <h2>La Hacienda Plaza de Armas</h2>
+          <p>Puno · 13–14 Mar</p>
+          <p>Plaza de Armas, Puno (or similar)</p>
+          <p>phone: update when documents arrive</p>
+          <p class="muted">Altitude 3 812 m. Confirmed ~7 days before.</p>
+          <div id="map-puno" class="map"></div>
+<p class="map-actions">
+  <a class="btn" href="https://www.google.com/maps/dir/?api=1&amp;destination=-15.8402,-70.0219&amp;travelmode=walking">Open in Google Maps</a>
+  <a class="btn ghost" href="geo:-15.8402,-70.0219?q=-15.8402,-70.0219(La%20Hacienda%20Plaza%20de%20Armas)">geo:</a>
+</p>
+        </div>
+</main>
+<nav class="bottom-nav" aria-label="Main">
+  <a class="" href="index.html">Today</a>
+  <a class="" href="index.html#days">Days</a>
+  <a class="" href="sites.html">Sites</a>
+  <a class="active" href="hotels.html">Hotels</a>
+  <a class="" href="contacts.html">Contacts</a>
+</nav>
+<script src="app.js"></script>
+<script src="vendor/leaflet.js"></script>
+<script>
+(function() {
+  var map = L.map('map-lima', {zoomControl: true}).setView([-12.1217, -77.0297], 13);
+  L.tileLayer('tiles/{z}/{x}/{y}.jpg', {
+    maxZoom: 16, minZoom: 12,
+    errorTileUrl: 'data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///ywAAAAAAQABAAACAUwAOw==',
+    attribution: 'Tiles © Esri, HERE, Garmin, © OpenStreetMap contributors'
+  }).addTo(map);
+  L.marker([-12.1217, -77.0297]).addTo(map).bindPopup("Del Pilar Miraflores");
+})();
+</script>
+<script src="vendor/leaflet.js"></script>
+<script>
+(function() {
+  var map = L.map('map-ollantaytambo', {zoomControl: true}).setView([-13.2586, -72.2633], 13);
+  L.tileLayer('tiles/{z}/{x}/{y}.jpg', {
+    maxZoom: 16, minZoom: 12,
+    errorTileUrl: 'data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///ywAAAAAAQABAAACAUwAOw==',
+    attribution: 'Tiles © Esri, HERE, Garmin, © OpenStreetMap contributors'
+  }).addTo(map);
+  L.marker([-13.2586, -72.2633]).addTo(map).bindPopup("Sol Ollantay Valle");
+})();
+</script>
+<script src="vendor/leaflet.js"></script>
+<script>
+(function() {
+  var map = L.map('map-quillabamba', {zoomControl: true}).setView([-12.8628, -72.6928], 13);
+  L.tileLayer('tiles/{z}/{x}/{y}.jpg', {
+    maxZoom: 16, minZoom: 12,
+    errorTileUrl: 'data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///ywAAAAAAQABAAACAUwAOw==',
+    attribution: 'Tiles © Esri, HERE, Garmin, © OpenStreetMap contributors'
+  }).addTo(map);
+  L.marker([-12.8628, -72.6928]).addTo(map).bindPopup("Hotel Purakilla");
+})();
+</script>
+<script src="vendor/leaflet.js"></script>
+<script>
+(function() {
+  var map = L.map('map-cusco', {zoomControl: true}).setView([-13.5167, -71.9785], 13);
+  L.tileLayer('tiles/{z}/{x}/{y}.jpg', {
+    maxZoom: 16, minZoom: 12,
+    errorTileUrl: 'data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///ywAAAAAAQABAAACAUwAOw==',
+    attribution: 'Tiles © Esri, HERE, Garmin, © OpenStreetMap contributors'
+  }).addTo(map);
+  L.marker([-13.5167, -71.9785]).addTo(map).bindPopup("Tierra Viva Centro");
+})();
+</script>
+<script src="vendor/leaflet.js"></script>
+<script>
+(function() {
+  var map = L.map('map-puno', {zoomControl: true}).setView([-15.8402, -70.0219], 13);
+  L.tileLayer('tiles/{z}/{x}/{y}.jpg', {
+    maxZoom: 16, minZoom: 12,
+    errorTileUrl: 'data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///ywAAAAAAQABAAACAUwAOw==',
+    attribution: 'Tiles © Esri, HERE, Garmin, © OpenStreetMap contributors'
+  }).addTo(map);
+  L.marker([-15.8402, -70.0219]).addTo(map).bindPopup("La Hacienda Plaza de Armas");
+})();
+</script>
+</body>
+</html>

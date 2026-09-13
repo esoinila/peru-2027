@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#1c120c">
+<title>Apurímac headwaters mesas · Peru 2027</title>
+<link rel="manifest" href="../manifest.webmanifest">
+<link rel="icon" href="../img/icon-192.png">
+<link rel="apple-touch-icon" href="../img/icon-192.png">
+<link rel="stylesheet" href="../app.css">
+<link rel="stylesheet" href="../vendor/leaflet.css">
+</head>
+<body>
+<main class="wrap">
+
+<p class="muted"><a href="../sites.html">← Sites</a></p>
+<h1>Apurímac headwaters mesas</h1>
+<p><span class="badge">PC</span> <span class="badge">region</span></p>
+<h2>What it is</h2>
+<p>Not on this tour. High-puna Wari/Inca cluster; GPS region only.</p>
+<h2>Look for</h2>
+<div data-look-for="apurimac-headwaters-mesas" data-items='[]'></div>
+<p class="muted">not on route</p>
+<p><strong>Hours:</strong> n/a<br>
+<strong>Ticket:</strong> n/a</p>
+<ul class="plain"><li><a href="https://www.youtube.com/watch?v=v3DlKLkb5KM">https://www.youtube.com/watch?v=v3DlKLkb5KM</a></li></ul>
+<div id="map" class="map"></div>
+<p class="map-actions">
+  <a class="btn" href="https://www.google.com/maps/dir/?api=1&amp;destination=-14.85,-71.55&amp;travelmode=walking">Open in Google Maps</a>
+  <a class="btn ghost" href="geo:-14.85,-71.55?q=-14.85,-71.55(Apur%C3%ADmac%20headwaters%20mesas)">geo:</a>
+</p>
+<h2>From the encyclopedia</h2>
+            <div class="card">
+              <p>Video: volcanic-rock basin where three streams meet; mesa-top ruins, circular funerary towers, alpaca-hoof stairs, Wari roads; ‘≥3× Machu Picchu.’ 2023 Emerson Pereira temple/fountain cited. Site cluster is real-class (high-puna Wari/Inca) but this pin is not a surveyed hectare. GPS region only.</p>
+              <h3>Claims</h3>
+              <ul class="plain"><li>Volume boast ≥3× Machu Picchu (unsurveyed here)</li><li>Funerary towers + camelid-worn stairs</li></ul>
+              <h3>Sources</h3>
+              <ul class="plain"><li><a href="https://www.youtube.com/watch?v=v3DlKLkb5KM">thePOVchannel — lost city of the Amazon (video)</a></li></ul>
+            </div>
+<h2>My notes</h2>
+<textarea data-notes="apurimac-headwaters-mesas" placeholder="Notes stay on this phone"></textarea>
+
+</main>
+<nav class="bottom-nav" aria-label="Main">
+  <a class="" href="../index.html">Today</a>
+  <a class="" href="../index.html#days">Days</a>
+  <a class="active" href="../sites.html">Sites</a>
+  <a class="" href="../hotels.html">Hotels</a>
+  <a class="" href="../contacts.html">Contacts</a>
+</nav>
+<script src="../app.js"></script>
+<script src="../vendor/leaflet.js"></script>
+<script>
+(function() {
+  var map = L.map('map', {zoomControl: true}).setView([-14.85, -71.55], 11);
+  L.tileLayer('../tiles/{z}/{x}/{y}.jpg', {
+    maxZoom: 16, minZoom: 12,
+    errorTileUrl: 'data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///ywAAAAAAQABAAACAUwAOw==',
+    attribution: 'Tiles © Esri, HERE, Garmin, © OpenStreetMap contributors'
+  }).addTo(map);
+  L.marker([-14.85, -71.55]).addTo(map).bindPopup("Apur\u00edmac headwaters mesas");
+})();
+</script>
+</body>
+</html>

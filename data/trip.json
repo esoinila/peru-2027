@@ -1,0 +1,663 @@
+{
+  "trip": {
+    "title": "Peru 2027",
+    "subtitle": "Inkojen aarteet ja aromit · PESGL15AFI",
+    "tz": "America/Lima",
+    "start": "2027-03-04",
+    "end": "2027-03-17",
+    "agency": {
+      "name": "Albatros Travel",
+      "phone": "+358 9 31585999",
+      "hours": "Mon–Fri 9–16 (Finland)",
+      "email": "info@albatros.fi",
+      "booking": "60067436",
+      "member": "30029419",
+      "portal": "https://minun.albatros.fi"
+    }
+  },
+  "hotels": [
+    {
+      "id": "lima",
+      "name": "Del Pilar Miraflores",
+      "city": "Lima",
+      "nights": "4–5 Mar",
+      "address": "By Kennedy Park, Miraflores, Lima (or similar — confirmed ~7 days before)",
+      "lat": -12.1217,
+      "lon": -77.0297,
+      "precision": "approx",
+      "phone": "",
+      "note": "Confirmed with documents ~7 days before departure — update. Walk to Huaca Pucllana ~15 min."
+    },
+    {
+      "id": "ollantaytambo",
+      "name": "Sol Ollantay Valle",
+      "city": "Ollantaytambo",
+      "nights": "6–7, 8–10 Mar (4 nights, split)",
+      "address": "By Plaza de Armas, Ollantaytambo; walk to station (or similar)",
+      "lat": -13.2586,
+      "lon": -72.2633,
+      "precision": "approx",
+      "phone": "",
+      "note": "Best base. Ruins gate ~5 min. Confirmed ~7 days before."
+    },
+    {
+      "id": "quillabamba",
+      "name": "Hotel Purakilla",
+      "city": "Quillabamba",
+      "nights": "7 Mar",
+      "address": "Quillabamba (or similar). Pool — pack swimwear.",
+      "lat": -12.8628,
+      "lon": -72.6928,
+      "precision": "approx",
+      "phone": "",
+      "note": "Confirmed ~7 days before."
+    },
+    {
+      "id": "cusco",
+      "name": "Tierra Viva Centro",
+      "city": "Cusco",
+      "nights": "11–12 Mar",
+      "address": "Walking distance from Plaza de Armas, Cusco (or similar)",
+      "lat": -13.5167,
+      "lon": -71.9785,
+      "precision": "approx",
+      "phone": "",
+      "note": "Confirmed ~7 days before."
+    },
+    {
+      "id": "puno",
+      "name": "La Hacienda Plaza de Armas",
+      "city": "Puno",
+      "nights": "13–14 Mar",
+      "address": "Plaza de Armas, Puno (or similar)",
+      "lat": -15.8402,
+      "lon": -70.0219,
+      "precision": "approx",
+      "phone": "",
+      "note": "Altitude 3 812 m. Confirmed ~7 days before."
+    }
+  ],
+  "packing": [
+    "Layers, gloves for Titicaca mornings",
+    "Hiking shoes + sandals",
+    "Rain/wind shell",
+    "Swimwear (Purakilla has a pool)",
+    "Binoculars (Tunkimayo cock-of-the-rock)",
+    "Hand sanitiser",
+    "Passport (as submitted in portal; valid to 21 Aug 2031)",
+    "Sol cash + card; tips ~50 USD total recommended",
+    "No visa. Special diets for flights: ≥45 days before."
+  ],
+  "practical": [
+    "Machu Picchu group tickets bought ~3 months ahead via portal — done.",
+    "Vaccinations: PDF says yes — check THL for Selva Alta (Quillabamba/Tunkimayo ~1 000–2 000 m).",
+    "Rainbow Mountain add-on: PDF says April–November only — ask Albatros; decision by 3 Jan 2027 (60-day rule).",
+    "Hotels are “these or similar”; names + phones in the ~25 Feb 2027 documents."
+  ],
+  "contacts": {
+    "tour_leader": {"name": "—", "phone": "", "note": "Name + meeting point in documents ~25 Feb 2027"},
+    "embassy": {"name": "Finnish representation for Peru", "note": "unverified — check on site / UM.fi before travel; honorary consulate details change"},
+    "emergency": {"police": "105", "ambulance": "116", "note": "Peru national numbers"},
+    "insurance": {"note": "Placeholder — copy policy no. from Matkavakuutus.pdf (Drive/Travel2027)"}
+  },
+  "days": [
+    {
+      "n": 1, "date": "2027-03-04", "title": "Helsinki → Lima",
+      "hotel": "lima", "altitude_m": 0, "meals": "—",
+      "programme": ["HEL → LIM (one stop)", "Transfer to Miraflores; hotel Del Pilar (by Kennedy Park) or similar"],
+      "free": [{"from": "evening", "note": "Arrive; evening in Miraflores if energy allows"}],
+      "targets": ["huaca-pucllana"]
+    },
+    {
+      "n": 2, "date": "2027-03-05", "title": "Lima old town + Larco",
+      "hotel": "lima", "altitude_m": 0, "meals": "B + L",
+      "programme": [
+        "Lima old town: Plaza de Armas, cathedral",
+        "San Francisco church + catacombs (25 000 burials, rediscovered 1943)",
+        "Larco Museum (Pueblo Libre) — pre-Inca ceramics + gold",
+        "Lunch included"
+      ],
+      "free": [{"from": "evening", "note": "Huaca Pucllana night lights; Huaca Huallamarca in San Isidro"}],
+      "targets": ["larco-museum", "san-francisco-catacombs", "huaca-pucllana", "huaca-huallamarca"]
+    },
+    {
+      "n": 3, "date": "2027-03-06", "title": "Fly to Cusco → Sacred Valley → Ollantaytambo",
+      "hotel": "ollantaytambo", "altitude_m": 2900, "meals": "B + L",
+      "programme": [
+        "Fly LIM → CUZ (Cusco 3 400 m)",
+        "Drive straight down to the Sacred Valley (2 900 m)",
+        "Afternoon arrival Ollantaytambo; old-town walk",
+        "Lunch included"
+      ],
+      "free": [{"from": "evening", "note": "Late afternoon + evening in Ollantaytambo; ruins gate 5 min"}],
+      "targets": ["ollantaytambo-sun-temple", "pinkuylluna", "ollantaytambo-tired-stones"]
+    },
+    {
+      "n": 4, "date": "2027-03-07", "title": "Abra Málaga → Huamanmarca → Quillabamba",
+      "hotel": "quillabamba", "altitude_m": 1000, "meals": "B + L",
+      "programme": [
+        "Ollantaytambo → Abra Málaga (4 316 m; coffee, Verónica glacier view)",
+        "Alfamayo viewpoint",
+        "Huamanmarca archaeological site (usnu, four double doorways to the cardinal points)",
+        "Huayopata-Calquiña tea plantation",
+        "Family lunch",
+        "Quillabamba, Hotel Purakilla"
+      ],
+      "free": [{"from": "evening", "note": "Late afternoon + evening in Quillabamba"}],
+      "targets": ["huamanmarca", "abra-malaga"]
+    },
+    {
+      "n": 5, "date": "2027-03-08", "title": "Tunkimayo + cacao → back to Ollantaytambo",
+      "hotel": "ollantaytambo", "altitude_m": 2900, "meals": "B + L",
+      "programme": [
+        "04:00 start → Tunkimayo reserve (Chuyapi river, ~2 000 m; cock-of-the-rock lek)",
+        "Breakfast",
+        "Chuncho cacao farm",
+        "Return to Ollantaytambo"
+      ],
+      "free": [{"from": "evening", "note": "Evening in Ollantaytambo"}],
+      "targets": ["ollantaytambo-sun-temple", "naupa-iglesia"]
+    },
+    {
+      "n": 6, "date": "2027-03-09", "title": "Machu Picchu",
+      "hotel": "ollantaytambo", "altitude_m": 2430, "meals": "B",
+      "programme": [
+        "Train Ollantaytambo → Aguas Calientes",
+        "Machu Picchu (2 430 m), ≥3 h on site (group may split; omatoimisesti after the tour)",
+        "Train back late afternoon"
+      ],
+      "free": [{"from": "evening", "note": "Evening back in Ollantaytambo"}],
+      "targets": ["machu-picchu"]
+    },
+    {
+      "n": 7, "date": "2027-03-10", "title": "Maras + Moray",
+      "hotel": "ollantaytambo", "altitude_m": 2900, "meals": "B + L",
+      "programme": [
+        "Maras salt pans (~3 000 pans)",
+        "Moray terraces",
+        "Misminay village lunch",
+        "Return; afternoon/evening free"
+      ],
+      "free": [{"from": "afternoon", "note": "Kachiqhata quarry 3–4 h round trip if back by ~14:00; or Ñaupa Iglesia"}],
+      "targets": ["moray", "maras-salt-pans", "kachiqhata-quarry", "naupa-iglesia"]
+    },
+    {
+      "n": 8, "date": "2027-03-11", "title": "Cusco + Sacsayhuamán",
+      "hotel": "cusco", "altitude_m": 3400, "meals": "B",
+      "programme": [
+        "Drive to Cusco (3 400 m)",
+        "San Pedro market",
+        "Sacsayhuamán",
+        "Rest of the day free; hotel walking distance from Plaza (Tierra Viva Centro)"
+      ],
+      "free": [{"from": "afternoon", "note": "Quespehuara, Q'enqo, Coricancha, Hatun Rumiyoc, museums"}],
+      "targets": ["sacsayhuaman", "quespehuara-huacas", "qenqo", "coricancha-cusco", "hatun-rumiyoc", "tambomachay", "museo-inka", "map-cusco"]
+    },
+    {
+      "n": 9, "date": "2027-03-12", "title": "Free day Cusco (or Rainbow Mountain)",
+      "hotel": "cusco", "altitude_m": 3400, "meals": "B",
+      "programme": [
+        "Full free day in Cusco",
+        "Or Rainbow Mountain add-on (Vinicunca 5 200 m; 04:00; 158 €/178 €; min 8; book ≥60 days; PDF: April–November only — confirm for March)"
+      ],
+      "free": [{"from": "morning", "note": "South Valley (Tipón, Piquillacta, Rumicolca) or Chinchero + Huchuy Qosqo"}],
+      "targets": ["tipon", "piquillacta", "rumicolca", "chinchero", "rainbow-mountain"]
+    },
+    {
+      "n": 10, "date": "2027-03-13", "title": "Cusco → Raqch'i → Pukara → Puno",
+      "hotel": "puno", "altitude_m": 3812, "meals": "B + L",
+      "programme": [
+        "Longest drive, across the altiplano",
+        "Raqch'i — Temple of Wiracocha (92 m × 20 m wall, 4 km enclosure)",
+        "Lunch",
+        "Pukara museum (monoliths)",
+        "Puno 3 812 m; La Hacienda Plaza de Armas"
+      ],
+      "free": [{"from": "evening", "note": "Sillustani taxi only if energy + daylight; ask leader"}],
+      "targets": ["raqchi", "pukara-museum", "sillustani"]
+    },
+    {
+      "n": 11, "date": "2027-03-14", "title": "Lake Titicaca: Uros + Taquile",
+      "hotel": "puno", "altitude_m": 3812, "meals": "B + L",
+      "programme": [
+        "Uros floating islands",
+        "Taquile (Collata village, 45 min), family lunch, hill walk",
+        "Back late afternoon"
+      ],
+      "free": [{"from": "evening", "note": "Evening in Puno. Puma Punku is across the Bolivian border — not realistic on this schedule."}],
+      "targets": ["uros", "taquile", "puma-punku"]
+    },
+    {
+      "n": 12, "date": "2027-03-15", "title": "Juliaca → Lima → onward flight",
+      "hotel": null, "altitude_m": 0, "meals": "B",
+      "programme": ["Juliaca → Lima → onward flight home"],
+      "free": [{"from": "morning", "note": "Sillustani only if Juliaca flight is late — ask the leader first"}],
+      "targets": ["sillustani"]
+    },
+    {
+      "n": 13, "date": "2027-03-16", "title": "In transit",
+      "hotel": null, "altitude_m": 0, "meals": "—",
+      "programme": ["In transit (one stop)"],
+      "free": [],
+      "targets": []
+    },
+    {
+      "n": 14, "date": "2027-03-17", "title": "Arrive Helsinki",
+      "hotel": null, "altitude_m": 0, "meals": "—",
+      "programme": ["Arrive Helsinki"],
+      "free": [],
+      "targets": []
+    }
+  ],
+  "sites": [
+    {
+      "slug": "huaca-pucllana", "name": "Huaca Pucllana", "lat": -12.1112, "lon": -77.0335, "precision": "approx",
+      "tags": ["PC"], "what": "Lima-culture adobe pyramid in Miraflores — the city on top of the older city, literally. Pre-Inca adobe so PS/HS do not apply. Night tours with lights.",
+      "look_for": ["Adobe pyramid massing vs modern Miraflores", "Night lighting if evening visit", "Lima culture vs later overlay"],
+      "from_hotel": "15 min walk from Del Pilar / Kennedy Park",
+      "hours": "unverified — check on site", "ticket": "unverified — check on site",
+      "source_urls": [], "encyclopedia_pin": null, "photo_slot": true
+    },
+    {
+      "slug": "huaca-huallamarca", "name": "Huaca Huallamarca", "lat": -12.0975, "lon": -77.0347, "precision": "approx",
+      "tags": ["PC"], "what": "Pre-Inca adobe huaca in San Isidro. Same “older city under the district” story as Pucllana.",
+      "look_for": ["Adobe construction", "Urban overlay"],
+      "from_hotel": "Taxi ~10–15 min from Miraflores",
+      "hours": "unverified — check on site", "ticket": "unverified — check on site",
+      "source_urls": [], "encyclopedia_pin": null, "photo_slot": true
+    },
+    {
+      "slug": "larco-museum", "name": "Larco Museum", "lat": -12.0773, "lon": -77.0690, "precision": "approx",
+      "tags": ["PC"], "what": "On the tour. Moche/Chimú/Nazca ceramics and gold in Pueblo Libre. Tourist bait is the erotic gallery; archive-quality is the quipu cabinet and pre-Inca metallurgy (tumbaga gilding).",
+      "look_for": ["Quipu cabinet", "Tumbaga gilding / pre-Inca metallurgy", "Moche ceramics (not only the erotic gallery)"],
+      "from_hotel": "On the group tour (Pueblo Libre)",
+      "hours": "on the tour", "ticket": "included in tour",
+      "source_urls": [], "encyclopedia_pin": null, "photo_slot": true
+    },
+    {
+      "slug": "san-francisco-catacombs", "name": "San Francisco church + catacombs", "lat": -12.0456, "lon": -77.0278, "precision": "approx",
+      "tags": ["PC"], "what": "On the tour. 25 000 burials; “rediscovered 1943” is a stop-shaped fact (who lost a crypt under a working church?). Cheap-check before pinning.",
+      "look_for": ["Catacombs layout", "The 1943 rediscovery story vs the working church above"],
+      "from_hotel": "On the group tour (old town)",
+      "hours": "on the tour", "ticket": "included in tour",
+      "source_urls": [], "encyclopedia_pin": null, "photo_slot": false
+    },
+    {
+      "slug": "ollantaytambo-sun-temple", "name": "Ollantaytambo — Temple of the Sun / Wall of the Six Monoliths",
+      "lat": -13.2581, "lon": -72.2636, "precision": "point",
+      "tags": ["PS", "HS", "PC"],
+      "what": "Rose granite (not local; from Kachiqhata across the river). Lower Inca-style fieldstone vs upper megalithic course is the PC layering argument in one photo. Ruins gate 5 min from the Plaza; boleto turístico needed.",
+      "look_for": ["PS knobs and scoops on monolith faces", "Stepped chakana relief", "Sharp inside-corner fillets (HS)", "Earthquake-resistant inclined jointing", "Lower fieldstone vs upper megalithic course (PC)"],
+      "from_hotel": "5 min walk from Plaza / hotel",
+      "hours": "typically until ~17:00 — unverified — check on site",
+      "ticket": "boleto turístico (partial ticket in Ollantaytambo or Cusco) — unverified price",
+      "source_urls": ["https://www.youtube.com/watch?v=rxXLg_-a1wY"],
+      "encyclopedia_pin": "ollantaytambo-sun-temple", "photo_slot": true
+    },
+    {
+      "slug": "ollantaytambo-tired-stones", "name": "Piedras cansadas — tired stones",
+      "lat": -13.262, "lon": -72.275, "precision": "region",
+      "tags": ["TS"],
+      "what": "Abandoned rose-granite megaliths on the ramp west of town toward the river. Several 20–60 t blocks in the fields. Photograph the drag faces.",
+      "look_for": ["Drag faces on abandoned blocks", "Blocks in the fields toward Vilcanota", "Scale (person or backpack)"],
+      "from_hotel": "From the Plaza down to the Vilcanota bridge, ~25 min",
+      "hours": "open landscape", "ticket": "free",
+      "source_urls": ["https://www.youtube.com/watch?v=rxXLg_-a1wY"],
+      "encyclopedia_pin": "ollantaytambo-tired-stones", "photo_slot": true
+    },
+    {
+      "slug": "kachiqhata-quarry", "name": "Kachiqhata quarry",
+      "lat": -13.2745, "lon": -72.255, "precision": "approx",
+      "tags": ["TS"],
+      "what": "Source of Ollantaytambo’s rose granite. 3–4 h round trip hike; doable day 7 afternoon if Maras/Moray return is by ~14:00. The ramp, sledge-road, and wall of stones that never left are the TS argument with your own feet on it.",
+      "look_for": ["Ramp / sledge-road", "Wall of stones that never left", "Quarry faces"],
+      "from_hotel": "3–4 h round trip hike from town",
+      "hours": "daylight", "ticket": "unverified — check on site",
+      "source_urls": ["https://www.youtube.com/watch?v=rxXLg_-a1wY"],
+      "encyclopedia_pin": "kachiqhata-quarry", "photo_slot": true
+    },
+    {
+      "slug": "pinkuylluna", "name": "Pinkuylluna storehouses",
+      "lat": -13.256, "lon": -72.264, "precision": "approx",
+      "tags": ["ENG"],
+      "what": "Opposite hillside, free, 45 min up. Best photo of the town’s Inca street grid and of the sun temple from across. The still-flowing Inca water channels in the streets are ENG in daily use.",
+      "look_for": ["Town street grid from above", "Sun temple across the valley", "Inca water channels in town (ENG)"],
+      "from_hotel": "45 min up from the Plaza",
+      "hours": "daylight", "ticket": "free",
+      "source_urls": [], "encyclopedia_pin": null, "photo_slot": true
+    },
+    {
+      "slug": "naupa-iglesia", "name": "Ñaupa Iglesia / Choquequilla",
+      "lat": -13.280, "lon": -72.220, "precision": "approx",
+      "tags": ["PS", "ENG"],
+      "what": "Carved altar in a cave ~5 km toward Pachar. The “portal” niche is a standard rabbit-hole stop (acoustic-niche family). Taxi 15 min + 20 min walk; free late afternoon.",
+      "look_for": ["Portal niche", "Carved altar in the cave", "Acoustic niche"],
+      "from_hotel": "Taxi 15 min + 20 min walk toward Pachar",
+      "hours": "unverified — check on site", "ticket": "unverified — check on site",
+      "source_urls": [], "encyclopedia_pin": null, "photo_slot": true
+    },
+    {
+      "slug": "huamanmarca", "name": "Huamanmarca",
+      "lat": -12.95, "lon": -72.55, "precision": "region",
+      "tags": ["PC", "ENG"],
+      "what": "On the tour. Usnu platform with four double-jamb doorways to the cardinal points, on the road down into the cloud forest. Inca administrative site on the Vilcabamba route. Pin candidate.",
+      "look_for": ["Usnu platform", "Four double doorways to the cardinal points"],
+      "from_hotel": "On the group tour (day 4)",
+      "hours": "on the tour", "ticket": "included in tour",
+      "source_urls": [], "encyclopedia_pin": null, "photo_slot": true
+    },
+    {
+      "slug": "abra-malaga", "name": "Abra Málaga",
+      "lat": -13.145, "lon": -72.300, "precision": "approx",
+      "tags": ["ENG"],
+      "what": "4 316 m pass. Coffee stop, Verónica glacier view. Crossing the Cordillera Urubamba above the Vilcabamba corridor; Bingham’s 1911 route to Vitcos/Ñusta Hispana ran the other side of this range.",
+      "look_for": ["Pass altitude / glacier view", "Cloud-forest drop toward Quillabamba"],
+      "from_hotel": "On the group tour (day 4)",
+      "hours": "on the tour", "ticket": "n/a",
+      "source_urls": [], "encyclopedia_pin": null, "photo_slot": false
+    },
+    {
+      "slug": "machu-picchu", "name": "Machu Picchu",
+      "lat": -13.1631, "lon": -72.5450, "precision": "point",
+      "tags": ["HS", "PS", "ENG"],
+      "what": "≥3 h on site; self-guided after the group tour. Bring the questions, not the answers. ~60 % of the construction is underground drainage (ENG).",
+      "look_for": [
+        "Intihuatana — flat planes, gnomon; 2000 beer-crane chip",
+        "Temple of the Sun (Torreón) + Royal Tomb cave — ashlar meets living bedrock",
+        "Temple of the Three Windows / Principal Temple — east wall subsidence",
+        "Temple of the Condor — bedrock + masonry composite",
+        "Unfinished quarry — half-split blocks with wedge-lines (Inca method on display)",
+        "Terraces + drainage (ENG)"
+      ],
+      "from_hotel": "Train from Ollantaytambo (on the tour)",
+      "hours": "on the tour; group tickets via portal", "ticket": "group tickets bought ~3 months ahead — done",
+      "source_urls": [], "encyclopedia_pin": null, "photo_slot": true
+    },
+    {
+      "slug": "moray", "name": "Moray terraces",
+      "lat": -13.3295, "lon": -72.1956, "precision": "approx",
+      "tags": ["ENG"],
+      "what": "Natural karst depression terraced. “Agricultural laboratory” is a hypothesis (temperature gradient ~5 °C top to bottom is measured; experimental-station story is inferred). Drainage — it never floods.",
+      "look_for": ["Sinkhole geology", "Drainage that never floods", "Terrace rings / temperature-gradient story as hypothesis"],
+      "from_hotel": "On the group tour (day 7)",
+      "hours": "on the tour", "ticket": "boleto turístico — unverified price",
+      "source_urls": [], "encyclopedia_pin": null, "photo_slot": true
+    },
+    {
+      "slug": "maras-salt-pans", "name": "Maras salt pans",
+      "lat": -13.3294, "lon": -72.1567, "precision": "approx",
+      "tags": ["ENG", "PC"],
+      "what": "Pre-Inca. Hypersaline spring from a salt dome. One hand-cut channel feeding ~3 000 pans by gravity.",
+      "look_for": ["Hand-cut feeder channel", "Gravity feed across ~3 000 pans", "Salt-dome spring"],
+      "from_hotel": "On the group tour (day 7)",
+      "hours": "on the tour", "ticket": "unverified — check on site",
+      "source_urls": [], "encyclopedia_pin": null, "photo_slot": true
+    },
+    {
+      "slug": "sacsayhuaman", "name": "Sacsayhuamán",
+      "lat": -13.5083, "lon": -71.982, "precision": "point",
+      "tags": ["HS", "PC", "PS"],
+      "what": "Three zigzag terraces of limestone (local). PDF says 300 t corner block — inflated; look for ~8.5 m / ~120–200 t. Killke (pre-Inca) pottery under the walls is the PC leg. Rodadero is glacially polished diorite, not melted stone.",
+      "look_for": [
+        "8.5 m corner block (not the 300 t PDF figure)",
+        "Bevelled joints",
+        "Killke pottery layer under the walls (PC)",
+        "Rodadero slide — polished rock, not melted",
+        "Throne of the Inca"
+      ],
+      "from_hotel": "On the tour, then walk; ~20–30 min from Plaza",
+      "hours": "on the tour; afternoon free", "ticket": "boleto turístico — unverified price",
+      "source_urls": ["https://www.youtube.com/watch?v=nN2oeAzpAt8", "https://www.youtube.com/watch?v=z1wmPLosRHU"],
+      "encyclopedia_pin": "sacsayhuaman", "photo_slot": true
+    },
+    {
+      "slug": "quespehuara-huacas", "name": "Quespehuara / Qhespewara huacas",
+      "lat": -13.492, "lon": -71.998, "precision": "region",
+      "tags": ["PS"],
+      "what": "1.5 km NW of Sacsayhuamán through eucalyptus; free; 30 min from the fortress gate. Fingerprint scoops in limestone. Photograph scoops with a scale; check whether they follow bedding planes (they do, mostly).",
+      "look_for": ["Fingerprint scoops with a scale", "Do scoops follow bedding planes?", "Puma-paw niches"],
+      "from_hotel": "30 min walk from Sacsayhuamán gate (1.5 km NW)",
+      "hours": "daylight; park", "ticket": "free (inside park)",
+      "source_urls": ["https://www.youtube.com/watch?v=nN2oeAzpAt8"],
+      "encyclopedia_pin": "quespehuara-huacas", "photo_slot": true
+    },
+    {
+      "slug": "qenqo", "name": "Q'enqo",
+      "lat": -13.5094, "lon": -71.9717, "precision": "approx",
+      "tags": ["ENG", "PS"],
+      "what": "10 min from Sacsayhuamán. Carved bedrock, zigzag channel, underground altar.",
+      "look_for": ["Zigzag channel", "Underground altar", "Carved bedrock"],
+      "from_hotel": "10 min from Sacsayhuamán",
+      "hours": "unverified — check on site", "ticket": "boleto turístico — unverified",
+      "source_urls": [], "encyclopedia_pin": null, "photo_slot": true
+    },
+    {
+      "slug": "tambomachay", "name": "Tambomachay / Puka Pukara",
+      "lat": -13.479, "lon": -71.961, "precision": "approx",
+      "tags": ["ENG"],
+      "what": "Hydraulics still running. Pair with Puka Pukara on the same road out of Cusco.",
+      "look_for": ["Fountains still running", "Channel layout"],
+      "from_hotel": "Taxi / collectivo from Cusco (~20 min)",
+      "hours": "unverified — check on site", "ticket": "boleto turístico — unverified",
+      "source_urls": [], "encyclopedia_pin": null, "photo_slot": true
+    },
+    {
+      "slug": "coricancha-cusco", "name": "Coricancha / Qorikancha",
+      "lat": -13.5208, "lon": -71.9756, "precision": "point",
+      "tags": ["HS", "PC"],
+      "what": "Finest HS jointing in the empire. Santo Domingo church on top is church-as-lid: 1650 and 1950 earthquakes threw down the church, not the Inca wall. Curved wall on Av. El Sol.",
+      "look_for": ["Curved wall on Av. El Sol", "Interior andesite rooms / jointing", "Church-as-lid (Santo Domingo on Inca walls)"],
+      "from_hotel": "Walk from Plaza / Tierra Viva",
+      "hours": "unverified — check on site", "ticket": "unverified — check on site",
+      "source_urls": ["https://www.youtube.com/watch?v=nN2oeAzpAt8"],
+      "encyclopedia_pin": "coricancha-cusco", "photo_slot": true
+    },
+    {
+      "slug": "hatun-rumiyoc", "name": "Hatun Rumiyoc / 12-angled stone",
+      "lat": -13.5165, "lon": -71.9781, "precision": "approx",
+      "tags": ["HS"],
+      "what": "2 min from the Plaza. Also the 14-angled stone around the corner and the “puma” in the wall on Calle Inca Roca.",
+      "look_for": ["12-angled stone", "14-angled stone around the corner", "Puma in the wall on Calle Inca Roca"],
+      "from_hotel": "2 min from Plaza de Armas",
+      "hours": "street, always", "ticket": "free (street)",
+      "source_urls": [], "encyclopedia_pin": null, "photo_slot": true
+    },
+    {
+      "slug": "museo-inka", "name": "Museo Inka",
+      "lat": -13.5168, "lon": -71.980, "precision": "approx",
+      "tags": ["PC"],
+      "what": "Quipus, trepanned skulls, elongated skulls — the Paracas-skull rabbit hole is here, not in Paracas.",
+      "look_for": ["Quipus", "Trepanned skulls", "Elongated skulls"],
+      "from_hotel": "Walk from Plaza",
+      "hours": "unverified — check on site", "ticket": "unverified — check on site",
+      "source_urls": [], "encyclopedia_pin": null, "photo_slot": true
+    },
+    {
+      "slug": "map-cusco", "name": "Museo de Arte Precolombino (MAP)",
+      "lat": -13.516, "lon": -71.977, "precision": "approx",
+      "tags": ["PC"],
+      "what": "Pre-Columbian art in Cusco. Pair with Museo Inka on a free afternoon.",
+      "look_for": ["Pre-Inca metalwork", "Ceramics sequence"],
+      "from_hotel": "Walk from Plaza",
+      "hours": "unverified — check on site", "ticket": "unverified — check on site",
+      "source_urls": [], "encyclopedia_pin": null, "photo_slot": false
+    },
+    {
+      "slug": "tipon", "name": "Tipón",
+      "lat": -13.571, "lon": -71.782, "precision": "approx",
+      "tags": ["ENG"],
+      "what": "South Valley. Best ENG site in the region — ceremonial fountains still running. Half-day with Piquillacta + Rumicolca (~35 km; taxi ~250–350 PEN — unverified).",
+      "look_for": ["Ceremonial fountains still running", "Hydraulic terraces"],
+      "from_hotel": "South Valley half-day (~35 km)",
+      "hours": "unverified — check on site", "ticket": "boleto turístico — unverified",
+      "source_urls": [], "encyclopedia_pin": null, "photo_slot": true
+    },
+    {
+      "slug": "piquillacta", "name": "Piquillacta",
+      "lat": -13.616, "lon": -71.717, "precision": "approx",
+      "tags": ["PC"],
+      "what": "Wari, pre-Inca planned city. PC layering on the South Valley half-day.",
+      "look_for": ["Wari grid / planned city", "Pre-Inca vs later reuse"],
+      "from_hotel": "South Valley half-day",
+      "hours": "unverified — check on site", "ticket": "unverified — check on site",
+      "source_urls": [], "encyclopedia_pin": null, "photo_slot": true
+    },
+    {
+      "slug": "rumicolca", "name": "Rumicolca",
+      "lat": -13.621, "lon": -71.705, "precision": "approx",
+      "tags": ["PC", "TS"],
+      "what": "Wari aqueduct-gate re-faced by the Inca. PC and TS in one wall. Inca quarry for Cusco’s andesite is right there.",
+      "look_for": ["Wari core vs Inca re-facing", "Andesite quarry"],
+      "from_hotel": "South Valley half-day",
+      "hours": "unverified — check on site", "ticket": "unverified — check on site",
+      "source_urls": [], "encyclopedia_pin": null, "photo_slot": true
+    },
+    {
+      "slug": "chinchero", "name": "Chinchero",
+      "lat": -13.391, "lon": -72.048, "precision": "approx",
+      "tags": ["PC"],
+      "what": "Inca palace terraces with the church on top (church-as-lid again). Weaving co-ops. Alternative free-day option with Huchuy Qosqo.",
+      "look_for": ["Church on Inca terraces", "Palace terraces"],
+      "from_hotel": "Half-day from Cusco",
+      "hours": "unverified — check on site", "ticket": "unverified — check on site",
+      "source_urls": [], "encyclopedia_pin": null, "photo_slot": true
+    },
+    {
+      "slug": "rainbow-mountain", "name": "Rainbow Mountain (Vinicunca)",
+      "lat": -13.868, "lon": -71.303, "precision": "approx",
+      "tags": [],
+      "what": "Scenery, not archaeology. 5 200 m by ATV from 4 600 m base; 04:00 start, ~3 h each way; 158 €/178 €; min 8 pax; book ≥60 days. PDF: April–November only — confirm for March before paying.",
+      "look_for": ["Colour bands (scenery)"],
+      "from_hotel": "04:00 pickup; all-day add-on",
+      "hours": "add-on product", "ticket": "158 € / 178 € (agency) — confirm March departures",
+      "source_urls": [], "encyclopedia_pin": null, "photo_slot": false
+    },
+    {
+      "slug": "raqchi", "name": "Raqch'i — Temple of Wiracocha",
+      "lat": -14.175, "lon": -71.370, "precision": "approx",
+      "tags": ["HS", "PS", "ENG"],
+      "what": "On the tour. 92 m wall is adobe on an andesite base course — photograph the andesite lower course (HS/PS); adobe above is why it “looks unfinished”. Round qolqa storehouses (200+).",
+      "look_for": ["Andesite base course vs adobe above", "92 m wall", "Round qolqa storehouses"],
+      "from_hotel": "On the group tour (day 10)",
+      "hours": "on the tour", "ticket": "included in tour",
+      "source_urls": [], "encyclopedia_pin": null, "photo_slot": true
+    },
+    {
+      "slug": "pukara-museum", "name": "Pukara museum",
+      "lat": -15.000, "lon": -70.370, "precision": "approx",
+      "tags": ["PC"],
+      "what": "On the tour. Pukara culture (500 BCE–200 CE) monoliths and “decapitator” stelae — Titicaca-basin culture before Tiwanaku; the deep layer under the Puma Punku story.",
+      "look_for": ["Monoliths", "Decapitator stelae", "Pukara vs later Tiwanaku"],
+      "from_hotel": "On the group tour (day 10)",
+      "hours": "on the tour", "ticket": "included in tour",
+      "source_urls": [], "encyclopedia_pin": null, "photo_slot": true
+    },
+    {
+      "slug": "sillustani", "name": "Sillustani chullpas",
+      "lat": -15.720, "lon": -70.160, "precision": "approx",
+      "tags": ["HS", "PC"],
+      "what": "Colla funerary towers ~35 km from Puno; andesite fitted-ashlar. One tower has the lizard relief. Day 10 evening or day 12 morning taxi only if the Juliaca flight is late — ask the leader first.",
+      "look_for": ["Fitted-ashlar chullpas", "Lizard relief", "Colla vs Inca fabric"],
+      "from_hotel": "~35 km taxi from Puno",
+      "hours": "unverified — check on site", "ticket": "unverified — check on site",
+      "source_urls": [], "encyclopedia_pin": null, "photo_slot": true
+    },
+    {
+      "slug": "uros", "name": "Uros floating islands",
+      "lat": -15.817, "lon": -69.967, "precision": "approx",
+      "tags": ["ENG"],
+      "what": "On the tour. Reed islands on Titicaca. Tourist layer is thick; still ENG (living on totora).",
+      "look_for": ["Reed construction", "How the islands are maintained"],
+      "from_hotel": "On the group tour (day 11)",
+      "hours": "on the tour", "ticket": "included in tour",
+      "source_urls": [], "encyclopedia_pin": null, "photo_slot": false
+    },
+    {
+      "slug": "taquile", "name": "Taquile",
+      "lat": -15.767, "lon": -69.683, "precision": "approx",
+      "tags": [],
+      "what": "On the tour. Collata village (~45 min), family lunch, hill walk. UNESCO textile tradition.",
+      "look_for": ["Hill walk / lake views", "Weaving"],
+      "from_hotel": "On the group tour (day 11)",
+      "hours": "on the tour", "ticket": "included in tour",
+      "source_urls": [], "encyclopedia_pin": null, "photo_slot": false
+    },
+    {
+      "slug": "puma-punku", "name": "Puma Punku (Tiwanaku, Bolivia)",
+      "lat": -16.5583, "lon": -68.6797, "precision": "point",
+      "tags": ["HS", "PS"],
+      "what": "Across the Bolivian border (3 h from Puno + border) — not realistic on this schedule. Note as the missing piece. Andesite H-blocks with sharp inside corners.",
+      "look_for": ["H-blocks / inside corners — not this trip"],
+      "from_hotel": "Not on this schedule (Bolivia)",
+      "hours": "n/a this trip", "ticket": "n/a this trip",
+      "source_urls": ["https://www.youtube.com/watch?v=z1wmPLosRHU"],
+      "encyclopedia_pin": "puma-punku", "photo_slot": false
+    },
+    {
+      "slug": "apurimac-source-mismi", "name": "Apurímac source — Nevado Mismi",
+      "lat": -15.5247, "lon": -71.6908, "precision": "approx",
+      "tags": [],
+      "what": "Not on this tour. Documented hydrology: origin of the Apurímac (longest Amazon tributary).",
+      "look_for": [],
+      "from_hotel": "not on route",
+      "hours": "n/a", "ticket": "n/a",
+      "source_urls": ["https://www.youtube.com/watch?v=v3DlKLkb5KM"],
+      "encyclopedia_pin": "apurimac-source-mismi", "photo_slot": false
+    },
+    {
+      "slug": "apurimac-headwaters-mesas", "name": "Apurímac headwaters mesas",
+      "lat": -14.85, "lon": -71.55, "precision": "region",
+      "tags": ["PC"],
+      "what": "Not on this tour. High-puna Wari/Inca cluster; GPS region only.",
+      "look_for": [],
+      "from_hotel": "not on route",
+      "hours": "n/a", "ticket": "n/a",
+      "source_urls": ["https://www.youtube.com/watch?v=v3DlKLkb5KM"],
+      "encyclopedia_pin": "apurimac-headwaters-mesas", "photo_slot": false
+    },
+    {
+      "slug": "choquequirao", "name": "Choquequirao",
+      "lat": -13.3928, "lon": -72.8736, "precision": "point",
+      "tags": ["PC"],
+      "what": "Not on this tour. Documented Inca complex above the Apurímac — “sister” of Machu Picchu. Multi-day hike.",
+      "look_for": [],
+      "from_hotel": "not on route",
+      "hours": "n/a", "ticket": "n/a",
+      "source_urls": ["https://www.youtube.com/watch?v=v3DlKLkb5KM"],
+      "encyclopedia_pin": "choquequirao", "photo_slot": false
+    },
+    {
+      "slug": "qeswachaka-bridge", "name": "Q’eswachaka grass-rope bridge",
+      "lat": -14.3807, "lon": -71.4839, "precision": "point",
+      "tags": ["ENG"],
+      "what": "Not on this tour. Last annually rebuilt ichu-grass Inca bridge. Living practice.",
+      "look_for": [],
+      "from_hotel": "not on route",
+      "hours": "n/a", "ticket": "n/a",
+      "source_urls": ["https://www.youtube.com/watch?v=v3DlKLkb5KM"],
+      "encyclopedia_pin": "qeswachaka-bridge", "photo_slot": false
+    },
+    {
+      "slug": "chiaraje-canas", "name": "Chiaraje",
+      "lat": -14.42, "lon": -71.35, "precision": "region",
+      "tags": [],
+      "what": "Not on this tour. Annual inter-ayllu ritual battle. GPS region (moves by year).",
+      "look_for": [],
+      "from_hotel": "not on route",
+      "hours": "n/a", "ticket": "n/a",
+      "source_urls": ["https://www.youtube.com/watch?v=v3DlKLkb5KM"],
+      "encyclopedia_pin": "chiaraje-canas", "photo_slot": false
+    },
+    {
+      "slug": "monte-sierpe-band-of-holes", "name": "Monte Sierpe — Band of Holes",
+      "lat": -13.7165, "lon": -75.8505, "precision": "approx",
+      "tags": ["ENG"],
+      "what": "Not on this route (Pisco Valley). ~5 000+ stone-lined pits. Do not chase from Lima evening.",
+      "look_for": [],
+      "from_hotel": "not on route",
+      "hours": "n/a", "ticket": "n/a",
+      "source_urls": ["https://www.youtube.com/watch?v=z1wmPLosRHU"],
+      "encyclopedia_pin": "monte-sierpe-band-of-holes", "photo_slot": false
+    }
+  ]
+}

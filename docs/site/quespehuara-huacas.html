@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#1c120c">
+<title>Quespehuara / Qhespewara huacas · Peru 2027</title>
+<link rel="manifest" href="../manifest.webmanifest">
+<link rel="icon" href="../img/icon-192.png">
+<link rel="apple-touch-icon" href="../img/icon-192.png">
+<link rel="stylesheet" href="../app.css">
+<link rel="stylesheet" href="../vendor/leaflet.css">
+</head>
+<body>
+<main class="wrap">
+
+<p class="muted"><a href="../sites.html">← Sites</a></p>
+<h1>Quespehuara / Qhespewara huacas</h1>
+<p><span class="badge">PS</span> <span class="badge">region</span></p>
+<h2>What it is</h2>
+<p>1.5 km NW of Sacsayhuamán through eucalyptus; free; 30 min from the fortress gate. Fingerprint scoops in limestone. Photograph scoops with a scale; check whether they follow bedding planes (they do, mostly).</p>
+<h2>Look for</h2>
+<div data-look-for="quespehuara-huacas" data-items='[&quot;Fingerprint scoops with a scale&quot;, &quot;Do scoops follow bedding planes?&quot;, &quot;Puma-paw niches&quot;]'></div>
+<p class="muted">30 min walk from Sacsayhuamán gate (1.5 km NW)</p>
+<p><strong>Hours:</strong> daylight; park<br>
+<strong>Ticket:</strong> free (inside park)</p>
+<ul class="plain"><li><a href="https://www.youtube.com/watch?v=nN2oeAzpAt8">https://www.youtube.com/watch?v=nN2oeAzpAt8</a></li></ul>
+<div id="map" class="map"></div>
+<p class="map-actions">
+  <a class="btn" href="https://www.google.com/maps/dir/?api=1&amp;destination=-13.492,-71.998&amp;travelmode=walking">Open in Google Maps</a>
+  <a class="btn ghost" href="geo:-13.492,-71.998?q=-13.492,-71.998(Quespehuara%20/%20Qhespewara%20huacas)">geo:</a>
+</p>
+<h2>From the encyclopedia</h2>
+            <div class="card">
+              <p>Sorcerers of Stone: fingerprint scoops, pulled-soft ledges, puma-paw niches in metamorphosed limestone ~45 min NW of Sacsayhuamán. Site exists inside the park (Quespewara / Qhespewara). Mainstream: Inca/Killke/Wari tools. Channel: geopolymer or stone-softening. GPS is region — walk-time lock, not a surveyed point.</p>
+              <h3>Claims</h3>
+              <ul class="plain"><li>Fingerprint / scoop marks in hard metamorphosed limestone</li><li>Geopolymer-stamped-huaca reading (overlay)</li></ul>
+              <h3>Sources</h3>
+              <ul class="plain"><li><a href="https://www.youtube.com/watch?v=nN2oeAzpAt8">Sorcerers of Stone — Quespehuara huacas (video)</a></li></ul>
+            </div>
+<h2>My notes</h2>
+<textarea data-notes="quespehuara-huacas" placeholder="Notes stay on this phone"></textarea>
+
+</main>
+<nav class="bottom-nav" aria-label="Main">
+  <a class="" href="../index.html">Today</a>
+  <a class="" href="../index.html#days">Days</a>
+  <a class="active" href="../sites.html">Sites</a>
+  <a class="" href="../hotels.html">Hotels</a>
+  <a class="" href="../contacts.html">Contacts</a>
+</nav>
+<script src="../app.js"></script>
+<script src="../vendor/leaflet.js"></script>
+<script>
+(function() {
+  var map = L.map('map', {zoomControl: true}).setView([-13.492, -71.998], 11);
+  L.tileLayer('../tiles/{z}/{x}/{y}.jpg', {
+    maxZoom: 16, minZoom: 12,
+    errorTileUrl: 'data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///ywAAAAAAQABAAACAUwAOw==',
+    attribution: 'Tiles © Esri, HERE, Garmin, © OpenStreetMap contributors'
+  }).addTo(map);
+  L.marker([-13.492, -71.998]).addTo(map).bindPopup("Quespehuara / Qhespewara huacas");
+})();
+</script>
+</body>
+</html>

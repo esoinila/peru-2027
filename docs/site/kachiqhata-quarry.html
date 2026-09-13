@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#1c120c">
+<title>Kachiqhata quarry · Peru 2027</title>
+<link rel="manifest" href="../manifest.webmanifest">
+<link rel="icon" href="../img/icon-192.png">
+<link rel="apple-touch-icon" href="../img/icon-192.png">
+<link rel="stylesheet" href="../app.css">
+<link rel="stylesheet" href="../vendor/leaflet.css">
+</head>
+<body>
+<main class="wrap">
+
+<p class="muted"><a href="../sites.html">← Sites</a></p>
+<h1>Kachiqhata quarry</h1>
+<p><span class="badge">TS</span> <span class="badge">approx</span></p>
+<h2>What it is</h2>
+<p>Source of Ollantaytambo’s rose granite. 3–4 h round trip hike; doable day 7 afternoon if Maras/Moray return is by ~14:00. The ramp, sledge-road, and wall of stones that never left are the TS argument with your own feet on it.</p>
+<h2>Look for</h2>
+<div data-look-for="kachiqhata-quarry" data-items='[&quot;Ramp / sledge-road&quot;, &quot;Wall of stones that never left&quot;, &quot;Quarry faces&quot;]'></div>
+<p class="muted">3–4 h round trip hike from town</p>
+<p><strong>Hours:</strong> daylight<br>
+<strong>Ticket:</strong> unverified — check on site</p>
+<ul class="plain"><li><a href="https://www.youtube.com/watch?v=rxXLg_-a1wY">https://www.youtube.com/watch?v=rxXLg_-a1wY</a></li></ul>
+<div id="map" class="map"></div>
+<p class="map-actions">
+  <a class="btn" href="https://www.google.com/maps/dir/?api=1&amp;destination=-13.2745,-72.255&amp;travelmode=walking">Open in Google Maps</a>
+  <a class="btn ghost" href="geo:-13.2745,-72.255?q=-13.2745,-72.255(Kachiqhata%20quarry)">geo:</a>
+</p>
+<h2>From the encyclopedia</h2>
+            <div class="card">
+              <p>Documented source of Ollantaytambo’s rose granite. Video: tired stones came down the mountain and across the river. Crossing + log-sled story is the rabbit-hole physics; the quarry itself is not in dispute.</p>
+              <h3>Claims</h3>
+              <ul class="plain"><li>Source of the rose granite / tired stones</li></ul>
+              <h3>Sources</h3>
+              <ul class="plain"><li><a href="https://www.youtube.com/watch?v=rxXLg_-a1wY">Sorcerers of Stone — Ollantaytambo deep dive (video)</a></li></ul>
+            </div>
+<h2>My notes</h2>
+<textarea data-notes="kachiqhata-quarry" placeholder="Notes stay on this phone"></textarea>
+
+</main>
+<nav class="bottom-nav" aria-label="Main">
+  <a class="" href="../index.html">Today</a>
+  <a class="" href="../index.html#days">Days</a>
+  <a class="active" href="../sites.html">Sites</a>
+  <a class="" href="../hotels.html">Hotels</a>
+  <a class="" href="../contacts.html">Contacts</a>
+</nav>
+<script src="../app.js"></script>
+<script src="../vendor/leaflet.js"></script>
+<script>
+(function() {
+  var map = L.map('map', {zoomControl: true}).setView([-13.2745, -72.255], 13);
+  L.tileLayer('../tiles/{z}/{x}/{y}.jpg', {
+    maxZoom: 16, minZoom: 12,
+    errorTileUrl: 'data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///ywAAAAAAQABAAACAUwAOw==',
+    attribution: 'Tiles © Esri, HERE, Garmin, © OpenStreetMap contributors'
+  }).addTo(map);
+  L.marker([-13.2745, -72.255]).addTo(map).bindPopup("Kachiqhata quarry");
+})();
+</script>
+</body>
+</html>

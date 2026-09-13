@@ -1,0 +1,244 @@
+{
+ "exported": "2026-09-13",
+ "from": "VennsRabbitHole data/sites/sites.json",
+ "pins": {
+  "sacsayhuaman": {
+   "name": "Sacsayhuamán — fortress / park gate (walk origin)",
+   "lat": -13.5083,
+   "lon": -71.982,
+   "precision": "point",
+   "summary": "Documented Inca/Killke cyclopean walls above Cusco. Sorcerers of Stone (yt-nN2oeAzpAt8) start at the main gate and walk ~45 min NW through pine/eucalyptus to the Quespehuara huacas. Fortress is real; the forest huacas are a separate pin.",
+   "claims": [
+    "Walk origin to Quespehuara huacas",
+    "Killke undercourse + zigzag megaliths (Uncharted Mysteries)",
+    "Knob-protrusion packaging: Yangshan vs Cusco (hZi4sIMhad8)"
+   ],
+   "sources": [
+    {
+     "label": "Sorcerers of Stone — Quespehuara huacas (video)",
+     "url": "https://www.youtube.com/watch?v=nN2oeAzpAt8"
+    },
+    {
+     "label": "Uncharted Mysteries — pre-Inca mega structures (video)",
+     "url": "https://www.youtube.com/watch?v=z1wmPLosRHU"
+    },
+    {
+     "label": "Universe Inside You — China megastructures (video)",
+     "url": "https://www.youtube.com/watch?v=hZi4sIMhad8"
+    }
+   ]
+  },
+  "quespehuara-huacas": {
+   "name": "Quespehuara / Qhespewara — forest huacas (soft-stone scoops)",
+   "lat": -13.492,
+   "lon": -71.998,
+   "precision": "region",
+   "summary": "Sorcerers of Stone: fingerprint scoops, pulled-soft ledges, puma-paw niches in metamorphosed limestone ~45 min NW of Sacsayhuamán. Site exists inside the park (Quespewara / Qhespewara). Mainstream: Inca/Killke/Wari tools. Channel: geopolymer or stone-softening. GPS is region — walk-time lock, not a surveyed point.",
+   "claims": [
+    "Fingerprint / scoop marks in hard metamorphosed limestone",
+    "Geopolymer-stamped-huaca reading (overlay)"
+   ],
+   "sources": [
+    {
+     "label": "Sorcerers of Stone — Quespehuara huacas (video)",
+     "url": "https://www.youtube.com/watch?v=nN2oeAzpAt8"
+    }
+   ]
+  },
+  "coricancha-cusco": {
+   "name": "Coricancha — Qorikancha (puma-paw comparison)",
+   "lat": -13.5208,
+   "lon": -71.9756,
+   "precision": "point",
+   "summary": "Inca sun temple under Santo Domingo. Video cites the giant puma-paw carving here as a size-variant of the Quespehuara paw niches (geopolymer-stamp analogy). Temple is real; the stamp reading is overlay.",
+   "claims": [
+    "Giant puma paw compared to Quespehuara niches"
+   ],
+   "sources": [
+    {
+     "label": "Sorcerers of Stone — Quespehuara huacas (video)",
+     "url": "https://www.youtube.com/watch?v=nN2oeAzpAt8"
+    }
+   ]
+  },
+  "ollantaytambo-sun-temple": {
+   "name": "Ollantaytambo — Temple of the Sun / polygonal granite",
+   "lat": -13.2581,
+   "lon": -72.2636,
+   "precision": "point",
+   "summary": "Sorcerers of Stone (yt-rxXLg_-a1wY): rose-granite polygonal walls, scoop trains on Mohs ~7–8 faces, resonant niches. Site is real Inca/earlier fabric. Channel: stone-softening + pre-Inca Hanan Pacha. Sister to Quespehuara (same school). Cross-school Venn with Egypt granite marks.",
+   "claims": [
+    "Scoop marks down granite block faces",
+    "Niche acoustics (overlay as sound room)",
+    "Inca-on-older-work packaging",
+    "Named with Sacsayhuamán / Puma Punku as the three mega-sites"
+   ],
+   "sources": [
+    {
+     "label": "Sorcerers of Stone — Ollantaytambo deep dive (video)",
+     "url": "https://www.youtube.com/watch?v=rxXLg_-a1wY"
+    },
+    {
+     "label": "Uncharted Mysteries — pre-Inca mega structures (video)",
+     "url": "https://www.youtube.com/watch?v=z1wmPLosRHU"
+    }
+   ]
+  },
+  "ollantaytambo-tired-stones": {
+   "name": "Piedras cansadas — tired / lazy stones (west approach)",
+   "lat": -13.262,
+   "lon": -72.275,
+   "precision": "region",
+   "summary": "Local name for abandoned rose-granite megaliths on the roadway. Video: one ~80 t block the transport ministry paved around; pits, through-channel, nub. Official: men + rope + logs from Kachiqhata across the Vilcanota. Channel cites UnchartedX log-crush. GPS is region (roadside scatter).",
+   "claims": [
+    "~80 t rose granite left in the road",
+    "Quarry path crosses Vilcanota"
+   ],
+   "sources": [
+    {
+     "label": "Sorcerers of Stone — Ollantaytambo deep dive (video)",
+     "url": "https://www.youtube.com/watch?v=rxXLg_-a1wY"
+    }
+   ]
+  },
+  "kachiqhata-quarry": {
+   "name": "Kachiqhata — rose-granite quarry (south of Vilcanota)",
+   "lat": -13.2745,
+   "lon": -72.255,
+   "precision": "approx",
+   "summary": "Documented source of Ollantaytambo’s rose granite. Video: tired stones came down the mountain and across the river. Crossing + log-sled story is the rabbit-hole physics; the quarry itself is not in dispute.",
+   "claims": [
+    "Source of the rose granite / tired stones"
+   ],
+   "sources": [
+    {
+     "label": "Sorcerers of Stone — Ollantaytambo deep dive (video)",
+     "url": "https://www.youtube.com/watch?v=rxXLg_-a1wY"
+    }
+   ]
+  },
+  "apurimac-source-mismi": {
+   "name": "Apurímac source — Nevado Mismi / Apacheta",
+   "lat": -15.5247,
+   "lon": -71.6908,
+   "precision": "approx",
+   "summary": "thePOVchannel (yt-v3DlKLkb5KM) hiked the origin of the Apurímac (longest Amazon tributary; Quechua Apu Rímac ≈ ‘where the lord speaks’) then worked downstream. Source peak/ridge is a documented hydrology claim (Mismi / Apacheta), not a lost city.",
+   "claims": [
+    "Hiked the Apurímac origin before the downstream forts"
+   ],
+   "sources": [
+    {
+     "label": "thePOVchannel — lost city of the Amazon (video)",
+     "url": "https://www.youtube.com/watch?v=v3DlKLkb5KM"
+    }
+   ]
+  },
+  "apurimac-headwaters-mesas": {
+   "name": "Apurímac headwaters mesas — 14k-ft defensive complex",
+   "lat": -14.85,
+   "lon": -71.55,
+   "precision": "region",
+   "summary": "Video: volcanic-rock basin where three streams meet; mesa-top ruins, circular funerary towers, alpaca-hoof stairs, Wari roads; ‘≥3× Machu Picchu.’ 2023 Emerson Pereira temple/fountain cited. Site cluster is real-class (high-puna Wari/Inca) but this pin is not a surveyed hectare. GPS region only.",
+   "claims": [
+    "Volume boast ≥3× Machu Picchu (unsurveyed here)",
+    "Funerary towers + camelid-worn stairs"
+   ],
+   "sources": [
+    {
+     "label": "thePOVchannel — lost city of the Amazon (video)",
+     "url": "https://www.youtube.com/watch?v=v3DlKLkb5KM"
+    }
+   ]
+  },
+  "choquequirao": {
+   "name": "Choquequirao — ‘sister’ of Machu Picchu / Enc Kagua overlay",
+   "lat": -13.3928,
+   "lon": -72.8736,
+   "precision": "point",
+   "summary": "Documented Inca complex above the Apurímac. Video: 2019 royal metal ornaments; packaged as Cieza’s lost fortress ‘Enc Kagua’ (name not locked). No Spanish siege kit found — absence-signal, not a verdict. Last-refuge contrast is usually Vilcabamba.",
+   "claims": [
+    "2019 gold/silver/copper garment ornaments (channel)",
+    "Enc Kagua / Cieza overlay; no Spanish trace"
+   ],
+   "sources": [
+    {
+     "label": "thePOVchannel — lost city of the Amazon (video)",
+     "url": "https://www.youtube.com/watch?v=v3DlKLkb5KM"
+    }
+   ]
+  },
+  "qeswachaka-bridge": {
+   "name": "Q’eswachaka — last Inca grass-rope bridge",
+   "lat": -14.3807,
+   "lon": -71.4839,
+   "precision": "point",
+   "summary": "Last annually rebuilt ichu-grass Inca bridge. Video walks the drive to it (and into Chiaraje). Living practice, not a lost-tech overlay.",
+   "claims": [
+    "Last true Inca rope bridge; rebuilt yearly"
+   ],
+   "sources": [
+    {
+     "label": "thePOVchannel — lost city of the Amazon (video)",
+     "url": "https://www.youtube.com/watch?v=v3DlKLkb5KM"
+    }
+   ]
+  },
+  "chiaraje-canas": {
+   "name": "Chiaraje — living ritual battle (Canas / Espinar)",
+   "lat": -14.42,
+   "lon": -71.35,
+   "precision": "region",
+   "summary": "Annual inter-ayllu battle. Video: driver stumbled into it on the Q’eswachaka road — car kicked, swinging machete/mace; later IDs Chiaraje. Documented ethnography. Channel rhyme: the mesa-fort wars never fully stopped. GPS region (moves by year/communities).",
+   "claims": [
+    "Living territorial battle; outsiders get hit"
+   ],
+   "sources": [
+    {
+     "label": "thePOVchannel — lost city of the Amazon (video)",
+     "url": "https://www.youtube.com/watch?v=v3DlKLkb5KM"
+    }
+   ]
+  },
+  "monte-sierpe-band-of-holes": {
+   "name": "Monte Sierpe — Band of Holes (Pisco Valley)",
+   "lat": -13.7165,
+   "lon": -75.8505,
+   "precision": "approx",
+   "summary": "Uncharted Mysteries (yt-z1wmPLosRHU): ~5,000+ stone-lined pits in a mile-long hillside grid. Not graves (empty), not cisterns (sand drains). From the air a barcode. Contrast: 2025 Sydney/Cambridge drone work argues accounting/exchange, not a machine. Category-gap is the empty grid.",
+   "claims": [
+    "5,000+ lined pits; no burials",
+    "Aerial grid / barcode over a mile"
+   ],
+   "sources": [
+    {
+     "label": "Uncharted Mysteries — pre-Inca mega structures (video)",
+     "url": "https://www.youtube.com/watch?v=z1wmPLosRHU"
+    }
+   ]
+  },
+  "puma-punku": {
+   "name": "Puma Punku — andesite H-blocks (Tiwanaku)",
+   "lat": -16.5583,
+   "lon": -68.6797,
+   "precision": "point",
+   "summary": "Uncharted Mysteries: modular andesite H-blocks with sharp inside right angles; sandstone platform. Tiwanaku, usually ~6th c. Channel: assembly-line / no chisel radius. Real site. Plastic-stone Venn with Egypt granite and Ollantaytambo scoops — overlap ≠ one factory.",
+   "claims": [
+    "H-blocks: modular andesite, inside corners",
+    "Red sandstone foundations + andesite precision",
+    "H-blocks as modular interchangeable parts (Megalithic Vault)",
+    "Cu-As-Ni cramps poured in place",
+    "2024 structured-light scan unpublished"
+   ],
+   "sources": [
+    {
+     "label": "Uncharted Mysteries — pre-Inca mega structures (video)",
+     "url": "https://www.youtube.com/watch?v=z1wmPLosRHU"
+    },
+    {
+     "label": "Megalithic Vault — H-blocks stranger (video)",
+     "url": "https://www.youtube.com/watch?v=ZXezG8TRU5o"
+    }
+   ]
+  }
+ }
+}

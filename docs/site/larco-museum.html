@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#1c120c">
+<title>Larco Museum · Peru 2027</title>
+<link rel="manifest" href="../manifest.webmanifest">
+<link rel="icon" href="../img/icon-192.png">
+<link rel="apple-touch-icon" href="../img/icon-192.png">
+<link rel="stylesheet" href="../app.css">
+<link rel="stylesheet" href="../vendor/leaflet.css">
+</head>
+<body>
+<main class="wrap">
+
+<p class="muted"><a href="../sites.html">← Sites</a></p>
+<h1>Larco Museum</h1>
+<p><span class="badge">PC</span> <span class="badge">approx</span></p>
+<h2>What it is</h2>
+<p>On the tour. Moche/Chimú/Nazca ceramics and gold in Pueblo Libre. Tourist bait is the erotic gallery; archive-quality is the quipu cabinet and pre-Inca metallurgy (tumbaga gilding).</p>
+<h2>Look for</h2>
+<div data-look-for="larco-museum" data-items='[&quot;Quipu cabinet&quot;, &quot;Tumbaga gilding / pre-Inca metallurgy&quot;, &quot;Moche ceramics (not only the erotic gallery)&quot;]'></div>
+<p class="muted">On the group tour (Pueblo Libre)</p>
+<p><strong>Hours:</strong> on the tour<br>
+<strong>Ticket:</strong> included in tour</p>
+
+<div id="map" class="map"></div>
+<p class="map-actions">
+  <a class="btn" href="https://www.google.com/maps/dir/?api=1&amp;destination=-12.0773,-77.069&amp;travelmode=walking">Open in Google Maps</a>
+  <a class="btn ghost" href="geo:-12.0773,-77.069?q=-12.0773,-77.069(Larco%20Museum)">geo:</a>
+</p>
+
+<h2>My notes</h2>
+<textarea data-notes="larco-museum" placeholder="Notes stay on this phone"></textarea>
+
+</main>
+<nav class="bottom-nav" aria-label="Main">
+  <a class="" href="../index.html">Today</a>
+  <a class="" href="../index.html#days">Days</a>
+  <a class="active" href="../sites.html">Sites</a>
+  <a class="" href="../hotels.html">Hotels</a>
+  <a class="" href="../contacts.html">Contacts</a>
+</nav>
+<script src="../app.js"></script>
+<script src="../vendor/leaflet.js"></script>
+<script>
+(function() {
+  var map = L.map('map', {zoomControl: true}).setView([-12.0773, -77.069], 13);
+  L.tileLayer('../tiles/{z}/{x}/{y}.jpg', {
+    maxZoom: 16, minZoom: 12,
+    errorTileUrl: 'data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///ywAAAAAAQABAAACAUwAOw==',
+    attribution: 'Tiles © Esri, HERE, Garmin, © OpenStreetMap contributors'
+  }).addTo(map);
+  L.marker([-12.0773, -77.069]).addTo(map).bindPopup("Larco Museum");
+})();
+</script>
+</body>
+</html>
