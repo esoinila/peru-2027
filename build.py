@@ -170,6 +170,42 @@ def tag_badges(tags):
     return "".join(f'<span class="badge">{esc(t)}</span>' for t in tags or [])
 
 
+SHOOT_LABEL = {"daylight": "☀ daylight", "night-lit": "☾ lit at night", "enclosed": "▣ enclosed"}
+
+
+def shoot_badges(cats):
+    return "".join(f'<span class="badge shoot {esc(c)}">{SHOOT_LABEL.get(c, c)}</span>' for c in cats or [])
+
+
+def meal_badges(meals):
+    m = (meals or "").upper()
+    if not m or m == "—":
+        return '<span class="badge meal none">no meals</span>'
+    out = []
+    for key, lab in (("B", "breakfast"), ("L", "lunch"), ("D", "dinner")):
+        if key in m.replace("BREAKFAST", "B").replace("LUNCH", "L").replace("DINNER", "D"):
+            out.append(f'<span class="badge meal">{lab}</span>')
+    if "D" not in m:
+        out.append('<span class="badge meal find">find dinner</span>')
+    return "".join(out)
+
+
+def evening_block(trip, hotel_id, here):
+    ev = (trip.get("evenings") or {}).get(hotel_id or "")
+    if not ev:
+        return ""
+    def items(lst):
+        rows = []
+        for x in lst:
+            g = f'https://www.google.com/maps/search/?api=1&query={x["lat"]},{x["lon"]}' if x.get("lat") else f'https://www.google.com/maps/search/?api=1&query={urllib.parse.quote(x["name"])}'
+            src = f' <a class="muted" href="{esc(x["src"])}">src</a>' if x.get("src") else ""
+            rows.append(f'<li><a href="{esc(g)}">{esc(x["name"])}</a> — {esc(x.get("note",""))}{src}</li>')
+        return "".join(rows)
+    return f"""<h2>After dark here</h2>
+<div class="card"><h3>☾ Lit places (360 works)</h3><ul class="plain">{items(ev.get("night_lit") or [])}</ul></div>
+<div class="card"><h3>🍷 Famous bars &amp; restaurants (take the group)</h3><ul class="plain">{items(ev.get("social") or [])}</ul></div>"""
+
+
 def map_block(here: Path, lat, lon, name, precision, prefix=""):
     lid = "map"
     z = zoom_for(precision)
@@ -231,6 +267,12 @@ a { color: var(--accent2); }
 .verdict.low, .verdict.none { background: #2a2020; color: var(--muted); }
 .card.programme { border-left: 4px solid var(--line); }
 .badge.prog { background: var(--bg2); color: var(--muted); }
+.badge.meal { background: #1e2a1e; color: #bfe0bf; }
+.badge.meal.find { background: #3a2a12; color: var(--accent); }
+.badge.meal.none { background: var(--bg2); color: var(--muted); }
+.badge.shoot.daylight { background: #3a3012; color: #ffe27a; }
+.badge.shoot.night-lit { background: #14203a; color: #9fc3ff; }
+.badge.shoot.enclosed { background: #2a1a3a; color: #d9b3ff; }
 .card.freebox { margin: -4px 0 14px 0; border: 2px solid var(--accent); border-left-width: 8px; background: #241a0e; }
 .card.freebox h3 { margin: 6px 0 2px; color: var(--accent); }
 .card.freebox p { margin: 4px 0 0; font-size: 0.9rem; }
@@ -245,7 +287,7 @@ a { color: var(--accent2); }
 .hero { width: 100%; height: 140px; object-fit: cover; border-radius: var(--radius); margin-bottom: 12px; display: block; }
 .row { display: flex; gap: 8px; flex-wrap: wrap; align-items: center; }
 .badge { display: inline-block; background: var(--bg2); border: 1px solid var(--line);
-  color: var(--accent2); padding: 2px 8px; border-radius: 999px; font-size: 0.75rem; font-weight: 700; }
+  color: var(--accent2); padding: 2px 8px; border-radius: 999px; font-size: 0.75rem; font-weight: 700; margin: 0 6px 4px 0; }
 .badge.free { background: #3a2a12; color: var(--accent); }
 .btn { display: inline-flex; align-items: center; justify-content: center; min-height: 44px;
   padding: 10px 14px; background: var(--accent); color: #1c120c; font-weight: 700;
@@ -490,7 +532,7 @@ def generate_pages(trip, pins):
           <div class="row"><span class="badge prog">programme</span> <strong>Day {d["n"]}</strong> <span class="muted">{esc(d["date"])}</span></div>
           <h3>{esc(d["title"])}</h3>
           <p class="muted">{esc(h["name"] if h else "in transit")} · {d["altitude_m"]} m</p>
-          {f'<p>{free_badge}</p>' if free_badge else ''}
+          <p>{meal_badges(d.get("meals"))}{free_badge}</p>
         </a>""")
         if w:
             best = site_by_slug(trip, w.get("best") or "")
@@ -554,7 +596,7 @@ window.TRIP_END = {json.dumps(trip["trip"]["end"])};
             det = rel(here, DOCS / "site" / f"{s['slug']}.html")
             tcards.append(f"""<div class="card">
               <h3>{esc(s["name"])}</h3>
-              <p>{tag_badges(s.get("tags"))}</p>
+              <p>{tag_badges(s.get("tags"))} {shoot_badges(s.get("shoot"))}</p>
               <p class="muted">{esc(s.get("from_hotel",""))}</p>
               <p class="muted">{esc(s.get("hours",""))} · {esc(s.get("ticket",""))}</p>
               <p class="map-actions">
@@ -570,13 +612,15 @@ window.TRIP_END = {json.dumps(trip["trip"]["end"])};
         body = f"""
 <p class="muted"><a href="{rel(here, DOCS / "index.html")}">← Days</a></p>
 <h1>Day {d["n"]} · {esc(d["title"])}</h1>
-<p class="muted">{esc(d["date"])} · {hotel_line} · {d["altitude_m"]} m · meals {esc(d.get("meals","—"))}</p>
+<p class="muted">{esc(d["date"])} · {hotel_line} · {d["altitude_m"]} m</p>
+<p>{meal_badges(d.get("meals"))}</p>
 <h2>Programme</h2>
 <ul class="timeline">{prog}</ul>
 <h2>Free time</h2>
 <div class="card">{free or "<p class='muted'>None listed</p>"}</div>
 <h2>Targets</h2>
 {''.join(tcards) or "<p class='muted'>No rabbit-hole targets this day.</p>"}
+{evening_block(trip, d.get("hotel"), here)}
 <div class="day-link">{prev}{nxt}</div>
 """
         here.write_text(page_shell(here, f"Day {d['n']} · Peru 2027", body, active="days"), encoding="utf-8")
@@ -589,7 +633,7 @@ window.TRIP_END = {json.dumps(trip["trip"]["end"])};
         href = rel(here, DOCS / "site" / f"{s['slug']}.html")
         cards.append(f"""<a class="card" href="{href}" style="display:block;text-decoration:none;color:inherit">
           <h3>{esc(s["name"])}</h3>
-          <p>{tag_badges(s.get("tags"))}</p>
+          <p>{tag_badges(s.get("tags"))} {shoot_badges(s.get("shoot"))}</p>
           <p class="muted">{esc(s.get("from_hotel",""))}</p>
         </a>""")
     here.write_text(page_shell(here, "Sites · Peru 2027", f"<h1>Sites</h1>{''.join(cards)}", active="sites"), encoding="utf-8")
@@ -622,6 +666,8 @@ window.TRIP_END = {json.dumps(trip["trip"]["end"])};
 <h2>Look for</h2>
 <div data-look-for="{esc(s["slug"])}" data-items='{esc(look)}'></div>
 <p class="muted">{esc(s.get("from_hotel",""))}</p>
+<p>{shoot_badges(s.get("shoot"))}</p>
+{f'<p><strong>360 shooting:</strong> {esc(s["shoot_note"])}</p>' if s.get("shoot_note") else ""}
 <p><strong>Hours:</strong> {esc(s.get("hours",""))}{(' <a class="muted" href="' + esc(s["hours_src"]) + '">src</a>') if s.get("hours_src") else ""}<br>
 <strong>Ticket:</strong> {esc(s.get("ticket",""))}</p>
 {f'<ul class="plain">{src_urls}</ul>' if src_urls else ""}
@@ -720,7 +766,12 @@ window.TRIP_END = {json.dumps(trip["trip"]["end"])};
 <p class="muted">Programme gaps vs. what is actually open. Hours are from public sources as of Sep 2026 — confirm on site. Sunset ≈ 18:15 all trip. Free-time start times are estimates from the programme, not from Albatros — the tour leader's word overrides.</p>
 <p><strong>Total free time:</strong> ≈ 65 h over 12 days, but only ≈ 25 h of it is daylight. The daylight sits in three places: day 7 afternoon (~4 h), day 8 afternoon (~4 h), day 9 full day (~10 h). Everything else is evenings.</p>
 <p><strong>Rules of thumb:</strong> Boleto Turístico (S/130, 10 days) covers Sacsayhuamán, Q'enqo, Tambomachay, Tipón, Piquillacta, Chinchero, Ollantaytambo, Moray — ask the leader whether the group ticket is yours to keep. Coricancha and Machu Picchu are separate tickets. Museo Inka closes 16:00 and on Sundays; MAP is open till 22:00 daily; Huaca Pucllana is closed Tuesdays.</p>
-{''.join(rows)}"""
+{''.join(rows)}
+<h2>Shooting categories</h2>
+<p>{shoot_badges(["daylight","night-lit","enclosed"])}</p>
+<p class="muted">☀ needs sun (sunset ≈ 18:15) · ☾ floodlit or open after dark · ▣ interiors, caves, crypts, tunnels — the 360 works regardless of light. Every site page carries these tags.</p>
+<h2>After dark, by town</h2>
+{''.join(f'<h3 id="ev-{hid}">{esc(hotels[hid]["city"])}</h3>' + evening_block(trip, hid, here) for hid in ["lima","ollantaytambo","quillabamba","cusco","puno"] if hid in hotels)}"""
     here.write_text(page_shell(here, "Free-time windows · Peru 2027", body, active="days"), encoding="utf-8")
 
 def deg2num(lat, lon, zoom):

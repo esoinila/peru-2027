@@ -458,7 +458,12 @@
    "source_urls": [],
    "encyclopedia_pin": null,
    "photo_slot": true,
-   "hours_src": "https://en.wikivoyage.org/wiki/Lima/Miraflores"
+   "hours_src": "https://en.wikivoyage.org/wiki/Lima/Miraflores",
+   "shoot": [
+    "daylight",
+    "night-lit"
+   ],
+   "shoot_note": "Adobe pyramid floodlit on night tours (historically Wed–Sun 19–22). Walkways between brick “bookshelf” walls read well in 360."
   },
   {
    "slug": "huaca-huallamarca",
@@ -480,7 +485,11 @@
    "source_urls": [],
    "encyclopedia_pin": null,
    "photo_slot": true,
-   "hours_src": "https://whichmuseum.com/museum/huaca-huallamarca-san-isidro-21823/opening-hours"
+   "hours_src": "https://whichmuseum.com/museum/huaca-huallamarca-san-isidro-21823/opening-hours",
+   "shoot": [
+    "daylight"
+   ],
+   "shoot_note": "Open mound, closes 17:00."
   },
   {
    "slug": "larco-museum",
@@ -503,7 +512,12 @@
    "source_urls": [],
    "encyclopedia_pin": null,
    "photo_slot": true,
-   "hours_src": "https://www.museolarco.org/planea-tu-visita/"
+   "hours_src": "https://www.museolarco.org/planea-tu-visita/",
+   "shoot": [
+    "enclosed",
+    "night-lit"
+   ],
+   "shoot_note": "Open till 19:00 (dark from 18:15). Glass-walled visible storage room with ~30 000 ceramics on shelves — enclosed 360 gold. Gold room. Lit gardens + restaurant."
   },
   {
    "slug": "san-francisco-catacombs",
@@ -524,7 +538,11 @@
    "ticket": "included in tour",
    "source_urls": [],
    "encyclopedia_pin": null,
-   "photo_slot": false
+   "photo_slot": false,
+   "shoot": [
+    "enclosed"
+   ],
+   "shoot_note": "Bone-filled crypts, low vaults — the Egypt-tomb feeling. Photography often prohibited inside; ask the guide."
   },
   {
    "slug": "ollantaytambo-sun-temple",
@@ -553,7 +571,11 @@
    ],
    "encyclopedia_pin": "ollantaytambo-sun-temple",
    "photo_slot": true,
-   "hours_src": "https://en.wikivoyage.org/wiki/Ollantaytambo"
+   "hours_src": "https://en.wikivoyage.org/wiki/Ollantaytambo",
+   "shoot": [
+    "daylight"
+   ],
+   "shoot_note": "Terraces + megaliths; last light hits the six monoliths from the west."
   },
   {
    "slug": "ollantaytambo-tired-stones",
@@ -577,7 +599,11 @@
     "https://www.youtube.com/watch?v=rxXLg_-a1wY"
    ],
    "encyclopedia_pin": "ollantaytambo-tired-stones",
-   "photo_slot": true
+   "photo_slot": true,
+   "shoot": [
+    "daylight"
+   ],
+   "shoot_note": "Roadside blocks."
   },
   {
    "slug": "kachiqhata-quarry",
@@ -601,7 +627,11 @@
     "https://www.youtube.com/watch?v=rxXLg_-a1wY"
    ],
    "encyclopedia_pin": "kachiqhata-quarry",
-   "photo_slot": true
+   "photo_slot": true,
+   "shoot": [
+    "daylight"
+   ],
+   "shoot_note": "Open hillside; chullpa-like huts near the top are small enclosed spaces."
   },
   {
    "slug": "pinkuylluna",
@@ -623,7 +653,12 @@
    "ticket": "free",
    "source_urls": [],
    "encyclopedia_pin": null,
-   "photo_slot": true
+   "photo_slot": true,
+   "shoot": [
+    "daylight",
+    "enclosed"
+   ],
+   "shoot_note": "Storehouse rooms are roofless but walled — semi-enclosed with valley view."
   },
   {
    "slug": "naupa-iglesia",
@@ -646,7 +681,12 @@
    "ticket": "free / small local fee",
    "source_urls": [],
    "encyclopedia_pin": null,
-   "photo_slot": true
+   "photo_slot": true,
+   "shoot": [
+    "enclosed",
+    "daylight"
+   ],
+   "shoot_note": "Cave shrine with carved altar niche — a true enclosed 360 subject; needs daylight to reach."
   },
   {
    "slug": "huamanmarca",
@@ -668,7 +708,10 @@
    "ticket": "included in tour",
    "source_urls": [],
    "encyclopedia_pin": null,
-   "photo_slot": true
+   "photo_slot": true,
+   "shoot": [
+    "daylight"
+   ]
   },
   {
    "slug": "abra-malaga",
@@ -689,7 +732,10 @@
    "ticket": "n/a",
    "source_urls": [],
    "encyclopedia_pin": null,
-   "photo_slot": false
+   "photo_slot": false,
+   "shoot": [
+    "daylight"
+   ]
   },
   {
    "slug": "machu-picchu",
@@ -716,7 +762,12 @@
    "ticket": "group tickets bought ~3 months ahead — done",
    "source_urls": [],
    "encyclopedia_pin": null,
-   "photo_slot": true
+   "photo_slot": true,
+   "shoot": [
+    "daylight",
+    "enclosed"
+   ],
+   "shoot_note": "Temple of the Condor cave and the Royal Tomb under the Torreón are the enclosed spots; Intimachay cave if circuit allows."
   },
   {
    "slug": "moray",
@@ -738,7 +789,10 @@
    "ticket": "boleto turístico — unverified price",
    "source_urls": [],
    "encyclopedia_pin": null,
-   "photo_slot": true
+   "photo_slot": true,
+   "shoot": [
+    "daylight"
+   ]
   },
   {
    "slug": "maras-salt-pans",
@@ -761,7 +815,11 @@
    "ticket": "unverified — check on site",
    "source_urls": [],
    "encyclopedia_pin": null,
-   "photo_slot": true
+   "photo_slot": true,
+   "shoot": [
+    "daylight"
+   ],
+   "shoot_note": "Best mid-afternoon side light."
   },
   {
    "slug": "sacsayhuaman",
@@ -790,7 +848,12 @@
     "https://www.youtube.com/watch?v=z1wmPLosRHU"
    ],
    "encyclopedia_pin": "sacsayhuaman",
-   "photo_slot": true
+   "photo_slot": true,
+   "shoot": [
+    "daylight",
+    "enclosed"
+   ],
+   "shoot_note": "Chincana tunnels (Zona X) and the Amaru Machay / Temple of the Moon cave 15 min east — carved cave interiors, bring a torch."
   },
   {
    "slug": "quespehuara-huacas",
@@ -814,7 +877,10 @@
     "https://www.youtube.com/watch?v=nN2oeAzpAt8"
    ],
    "encyclopedia_pin": "quespehuara-huacas",
-   "photo_slot": true
+   "photo_slot": true,
+   "shoot": [
+    "daylight"
+   ]
   },
   {
    "slug": "qenqo",
@@ -837,7 +903,12 @@
    "ticket": "Boleto Turístico (full or partial circuit I)",
    "source_urls": [],
    "encyclopedia_pin": null,
-   "photo_slot": true
+   "photo_slot": true,
+   "shoot": [
+    "enclosed",
+    "daylight"
+   ],
+   "shoot_note": "Carved tunnel and underground altar chamber inside the rock — enclosed, ~07:00–18:00."
   },
   {
    "slug": "tambomachay",
@@ -858,7 +929,10 @@
    "ticket": "Boleto Turístico",
    "source_urls": [],
    "encyclopedia_pin": null,
-   "photo_slot": true
+   "photo_slot": true,
+   "shoot": [
+    "daylight"
+   ]
   },
   {
    "slug": "coricancha-cusco",
@@ -884,7 +958,12 @@
    ],
    "encyclopedia_pin": "coricancha-cusco",
    "photo_slot": true,
-   "hours_src": "https://audiala.com/en/peru/cusco/coricancha"
+   "hours_src": "https://audiala.com/en/peru/cusco/coricancha",
+   "shoot": [
+    "enclosed",
+    "night-lit"
+   ],
+   "shoot_note": "Interior andesite rooms with trapezoid niches — enclosed. Curved wall on Av. El Sol is floodlit at night from the street (free). Interior closes 17:30."
   },
   {
    "slug": "hatun-rumiyoc",
@@ -906,7 +985,12 @@
    "ticket": "free (street)",
    "source_urls": [],
    "encyclopedia_pin": null,
-   "photo_slot": true
+   "photo_slot": true,
+   "shoot": [
+    "night-lit",
+    "daylight"
+   ],
+   "shoot_note": "Street is lit at night; 12-angle stone under lamps, fewer crowds after 20:00."
   },
   {
    "slug": "museo-inka",
@@ -929,7 +1013,11 @@
    "source_urls": [],
    "encyclopedia_pin": null,
    "photo_slot": true,
-   "hours_src": "https://en.wikivoyage.org/wiki/Cusco"
+   "hours_src": "https://en.wikivoyage.org/wiki/Cusco",
+   "shoot": [
+    "enclosed"
+   ],
+   "shoot_note": "Colonial courtyard + mummy room; closes 16:00."
   },
   {
    "slug": "map-cusco",
@@ -951,7 +1039,12 @@
    "source_urls": [],
    "encyclopedia_pin": null,
    "photo_slot": false,
-   "hours_src": "https://mapcusco.pe/"
+   "hours_src": "https://mapcusco.pe/",
+   "shoot": [
+    "enclosed",
+    "night-lit"
+   ],
+   "shoot_note": "Open till 22:00 — the after-dark museum. Dark gallery rooms with spot-lit ceramics."
   },
   {
    "slug": "tipon",
@@ -972,7 +1065,11 @@
    "ticket": "Boleto Turístico circuit II (South Valley S/70) or full",
    "source_urls": [],
    "encyclopedia_pin": null,
-   "photo_slot": true
+   "photo_slot": true,
+   "shoot": [
+    "daylight"
+   ],
+   "shoot_note": "Water channels; sunlight on flowing water."
   },
   {
    "slug": "piquillacta",
@@ -993,7 +1090,12 @@
    "ticket": "Boleto Turístico circuit II or full",
    "source_urls": [],
    "encyclopedia_pin": null,
-   "photo_slot": true
+   "photo_slot": true,
+   "shoot": [
+    "daylight",
+    "enclosed"
+   ],
+   "shoot_note": "Wari grid — walled corridors 3–4 m high feel enclosed."
   },
   {
    "slug": "rumicolca",
@@ -1015,7 +1117,10 @@
    "ticket": "free",
    "source_urls": [],
    "encyclopedia_pin": null,
-   "photo_slot": true
+   "photo_slot": true,
+   "shoot": [
+    "daylight"
+   ]
   },
   {
    "slug": "chinchero",
@@ -1037,7 +1142,12 @@
    "source_urls": [],
    "encyclopedia_pin": null,
    "photo_slot": true,
-   "hours_src": "https://en.wikivoyage.org/wiki/Chinchero"
+   "hours_src": "https://en.wikivoyage.org/wiki/Chinchero",
+   "shoot": [
+    "daylight",
+    "enclosed"
+   ],
+   "shoot_note": "Colonial church interior on Inca base (church-as-lid) — painted ceiling, enclosed; photos may be restricted."
   },
   {
    "slug": "rainbow-mountain",
@@ -1055,7 +1165,10 @@
    "ticket": "158 € / 178 € (agency) — confirm March departures",
    "source_urls": [],
    "encyclopedia_pin": null,
-   "photo_slot": false
+   "photo_slot": false,
+   "shoot": [
+    "daylight"
+   ]
   },
   {
    "slug": "raqchi",
@@ -1079,7 +1192,10 @@
    "ticket": "included in tour",
    "source_urls": [],
    "encyclopedia_pin": null,
-   "photo_slot": true
+   "photo_slot": true,
+   "shoot": [
+    "daylight"
+   ]
   },
   {
    "slug": "pukara-museum",
@@ -1101,7 +1217,11 @@
    "ticket": "included in tour",
    "source_urls": [],
    "encyclopedia_pin": null,
-   "photo_slot": true
+   "photo_slot": true,
+   "shoot": [
+    "enclosed"
+   ],
+   "shoot_note": "Small monolith hall."
   },
   {
    "slug": "sillustani",
@@ -1125,7 +1245,12 @@
    "source_urls": [],
    "encyclopedia_pin": null,
    "photo_slot": true,
-   "hours_src": "https://en.wikivoyage.org/wiki/Puno"
+   "hours_src": "https://en.wikivoyage.org/wiki/Puno",
+   "shoot": [
+    "daylight",
+    "enclosed"
+   ],
+   "shoot_note": "You can step inside some chullpas — round stone interiors."
   },
   {
    "slug": "uros",
@@ -1146,7 +1271,12 @@
    "ticket": "included in tour",
    "source_urls": [],
    "encyclopedia_pin": null,
-   "photo_slot": false
+   "photo_slot": false,
+   "shoot": [
+    "daylight",
+    "enclosed"
+   ],
+   "shoot_note": "Reed house interiors on the islands — small enclosed 360 subjects."
   },
   {
    "slug": "taquile",
@@ -1165,7 +1295,10 @@
    "ticket": "included in tour",
    "source_urls": [],
    "encyclopedia_pin": null,
-   "photo_slot": false
+   "photo_slot": false,
+   "shoot": [
+    "daylight"
+   ]
   },
   {
    "slug": "puma-punku",
@@ -1474,5 +1607,275 @@
    "hours": "0–4 h",
    "daylight": "depends on Juliaca flight"
   }
- ]
+ ],
+ "evenings": {
+  "lima": {
+   "night_lit": [
+    {
+     "name": "Circuito Mágico del Agua (Parque de la Reserva)",
+     "note": "13 floodlit fountains, laser show 19:15/20:15/21:30/22:30, Wed–Sun till 23:00, S/4. Great 360 subject, 15 min taxi from Miraflores.",
+     "src": "https://en.wikivoyage.org/wiki/Lima/Central_Lima",
+     "lat": -12.0708,
+     "lon": -77.0333
+    },
+    {
+     "name": "Huaca Pucllana night visit",
+     "note": "Floodlit adobe pyramid, guided, historically Wed–Sun 19–22.",
+     "lat": -12.1108,
+     "lon": -77.0336
+    },
+    {
+     "name": "Malecón + Parque del Amor",
+     "note": "Clifftop path, lit, paragliders till dusk; Larcomar below.",
+     "lat": -12.1273,
+     "lon": -77.03
+    },
+    {
+     "name": "Barranco: Puente de los Suspiros + Bajada de Baños",
+     "note": "Bohemian quarter, lit bridge and stairway to the sea, bars all around.",
+     "lat": -12.1491,
+     "lon": -77.0225
+    }
+   ],
+   "social": [
+    {
+     "name": "Restaurante Huaca Pucllana",
+     "note": "Terrace dining beside the floodlit pyramid — the socialising + 360 combo. Book.",
+     "lat": -12.1108,
+     "lon": -77.0336
+    },
+    {
+     "name": "La Mar Cebichería (Gastón Acurio)",
+     "note": "Famous cevichería, lunch only (closes ~17:00) — a day-2 option only if the tour ends early.",
+     "lat": -12.1188,
+     "lon": -77.0393
+    },
+    {
+     "name": "Panchita (Acurio)",
+     "note": "Anticuchos + criollo classics, dinner, Miraflores.",
+     "lat": -12.1215,
+     "lon": -77.0295
+    },
+    {
+     "name": "Central / Maido / Astrid y Gastón",
+     "note": "World-list restaurants; need booking months ahead and S/600+. Mention, not plan."
+    },
+    {
+     "name": "Calle de las Pizzas (Pasaje San Ramón)",
+     "note": "Tourist-trap street off Kennedy Park but guaranteed to meet other travellers.",
+     "src": "https://en.wikivoyage.org/wiki/Lima/Miraflores",
+     "lat": -12.1213,
+     "lon": -77.03
+    },
+    {
+     "name": "Ayahuasca Bar (Barranco)",
+     "note": "Pisco bar in a republican mansion — most-photographed bar in Lima.",
+     "lat": -12.147,
+     "lon": -77.021
+    },
+    {
+     "name": "La Rosa Náutica",
+     "note": "Restaurant on a pier over the Pacific under Larcomar; expensive, ambience.",
+     "src": "https://en.wikivoyage.org/wiki/Lima/Miraflores",
+     "lat": -12.1335,
+     "lon": -77.0325
+    }
+   ]
+  },
+  "ollantaytambo": {
+   "night_lit": [
+    {
+     "name": "Plaza de Armas + Inca-lane canals",
+     "note": "Streetlit; the fortress terraces are NOT lit. Calle Lari / Calle Horno original Inca walls under lamps.",
+     "lat": -13.2586,
+     "lon": -72.2634
+    }
+   ],
+   "social": [
+    {
+     "name": "Chuncho (Ollantaytambo)",
+     "note": "Farm-to-table Andean menu, most-cited restaurant in town, plaza corner.",
+     "lat": -13.2586,
+     "lon": -72.2638
+    },
+    {
+     "name": "Hearts Café",
+     "note": "Plaza café, profits to valley children’s projects; traveller meeting point.",
+     "src": "https://en.wikivoyage.org/wiki/Ollantaytambo",
+     "lat": -13.2584,
+     "lon": -72.263
+    },
+    {
+     "name": "Ganso bar",
+     "note": "Small quirky bar by the plaza, the town’s night spot.",
+     "lat": -13.2588,
+     "lon": -72.2632
+    },
+    {
+     "name": "Café Mayu (station)",
+     "note": "Espresso at the rail station — mornings/day-6 return.",
+     "src": "https://en.wikivoyage.org/wiki/Ollantaytambo",
+     "lat": -13.263,
+     "lon": -72.2705
+    }
+   ]
+  },
+  "quillabamba": {
+   "night_lit": [
+    {
+     "name": "Plaza de Armas Quillabamba",
+     "note": "Warm evenings (1 000 m), plaza life; no monuments."
+    }
+   ],
+   "social": [
+    {
+     "name": "Plaza cafés / cocoa & coffee shops",
+     "note": "Town is the coffee-cacao capital; ask leader for the current bar."
+    }
+   ]
+  },
+  "cusco": {
+   "night_lit": [
+    {
+     "name": "Plaza de Armas + Cathedral + La Compañía façades",
+     "note": "Whole plaza floodlit; the best free night 360 in Peru.",
+     "lat": -13.5167,
+     "lon": -71.9785
+    },
+    {
+     "name": "Coricancha curved wall (Av. El Sol)",
+     "note": "Floodlit from the street, free, any hour.",
+     "lat": -13.5208,
+     "lon": -71.9756
+    },
+    {
+     "name": "Hatun Rumiyoc / 12-angle stone",
+     "note": "Lit lane, quiet after 20:00.",
+     "lat": -13.5163,
+     "lon": -71.976
+    },
+    {
+     "name": "San Blas plaza + slope",
+     "note": "Artisan quarter, lit stairs, bars.",
+     "lat": -13.515,
+     "lon": -71.975
+    },
+    {
+     "name": "Museo de Arte Precolombino (MAP)",
+     "note": "Open till 22:00 — museum after dark.",
+     "lat": -13.5152,
+     "lon": -71.9778
+    },
+    {
+     "name": "Planetarium Cusco",
+     "note": "18:00 pick-up Plaza Regocijo, S/75, Inca astronomy + telescopes; competes with MAP.",
+     "src": "https://en.wikivoyage.org/wiki/Cusco",
+     "lat": -13.5068,
+     "lon": -71.9862
+    },
+    {
+     "name": "Cristo Blanco viewpoint",
+     "note": "Lit statue above Sacsayhuamán; city lights. Taxi up + down, not on foot after dark.",
+     "lat": -13.5097,
+     "lon": -71.9812
+    }
+   ],
+   "social": [
+    {
+     "name": "Cicciolina",
+     "note": "Cusco’s famous tapas/wine bar restaurant, Calle Palacio, 12:30–21:30. Book.",
+     "src": "https://en.wikivoyage.org/wiki/Cusco",
+     "lat": -13.5157,
+     "lon": -71.9766
+    },
+    {
+     "name": "Chicha por Gastón Acurio",
+     "note": "Acurio’s Cusco restaurant, Plaza Regocijo, Andean classics.",
+     "lat": -13.517,
+     "lon": -71.98
+    },
+    {
+     "name": "Museo del Pisco",
+     "note": "Pisco tasting bar, live music; sociable counter seating.",
+     "lat": -13.5172,
+     "lon": -71.977
+    },
+    {
+     "name": "Limbus Restobar (San Blas)",
+     "note": "Glass terrace over the city at dusk — the sunset drink. Arrive 17:15.",
+     "lat": -13.5134,
+     "lon": -71.9748
+    },
+    {
+     "name": "Paddy’s Irish Pub",
+     "note": "Highest Irish pub, corner of the plaza, 10:00–01:00, fellow travellers.",
+     "src": "https://en.wikivoyage.org/wiki/Cusco",
+     "lat": -13.5165,
+     "lon": -71.9775
+    },
+    {
+     "name": "Cross Keys pub",
+     "note": "Old British expat pub on the plaza balcony.",
+     "lat": -13.5164,
+     "lon": -71.9782
+    },
+    {
+     "name": "Pachapapa (San Blas)",
+     "note": "Courtyard restaurant, wood-oven cuy/alpaca, live music some nights.",
+     "lat": -13.515,
+     "lon": -71.9752
+    },
+    {
+     "name": "Mama Africa",
+     "note": "Plaza disco, free salsa lessons ~21:00, 19:00–05:00 — if the group wants to dance.",
+     "src": "https://en.wikivoyage.org/wiki/Cusco",
+     "lat": -13.5161,
+     "lon": -71.9795
+    }
+   ]
+  },
+  "puno": {
+   "night_lit": [
+    {
+     "name": "Jr. Lima pedestrian street + Plaza de Armas",
+     "note": "Lit, all the bars; cathedral façade.",
+     "src": "https://en.wikivoyage.org/wiki/Puno",
+     "lat": -15.8402,
+     "lon": -70.0219
+    },
+    {
+     "name": "Mirador Kuntur Wasi / Puma",
+     "note": "Lit condor statue above town, 600 steps; taxi only after dark.",
+     "lat": -15.8365,
+     "lon": -70.0275
+    }
+   ],
+   "social": [
+    {
+     "name": "Mojsa",
+     "note": "Plaza balcony restaurant, the standard recommendation in Puno.",
+     "lat": -15.8403,
+     "lon": -70.0225
+    },
+    {
+     "name": "Kamizaraky Rock Pub",
+     "note": "Jr. Grau, the traveller bar with live rock.",
+     "lat": -15.8395,
+     "lon": -70.0215
+    },
+    {
+     "name": "La Table del Inca",
+     "note": "French-Peruvian, small, book.",
+     "lat": -15.842,
+     "lon": -70.023
+    },
+    {
+     "name": "Positive Rock & Reggae Bar",
+     "note": "Jr. Lima, cheap, loud.",
+     "lat": -15.84,
+     "lon": -70.022
+    }
+   ]
+  }
+ }
 }
