@@ -623,7 +623,8 @@
     "Stepped chakana relief",
     "Sharp inside-corner fillets (HS)",
     "Earthquake-resistant inclined jointing",
-    "Lower fieldstone vs upper megalithic course (PC)"
+    "Lower fieldstone vs upper megalithic course (PC)",
+    "Cast-vs-carved (Natron Theory ch. 9, nubs): does the grain and any vein run unbroken from the block into the nub, or does the nub look like a separate pour?"
    ],
    "from_hotel": "5 min walk from Plaza / hotel",
    "hours": "~07:00–17:00 (last entry ~16:30) — unverified",
@@ -900,14 +901,20 @@
     "Bevelled joints",
     "Killke pottery layer under the walls (PC)",
     "Rodadero slide — polished rock, not melted",
-    "Throne of the Inca"
+    "Throne of the Inca",
+    "Cast-vs-carved test (Natron Theory p. 162): 'pregnant stone' / stone-in-stone, restricted area. Does the inner stone have a rim of different material, or the same texture straight across?",
+    "Cast-vs-carved: macro of a clean face. Fossils, bedding and interlocking calcite = natural limestone; sand-like grains floating in a uniform matrix = cast",
+    "Cast-vs-carved: veins, bedding lines or stylolites that continue across a joint into the neighbouring block (one quarried bed) or stop dead at every joint",
+    "Cast-vs-carved: round bubbles gathered near the top of a block (cast) vs none",
+    "Not decisive: rubble behind the facing. Dressed face over a rubble core is the cheapest wall with either method"
    ],
    "from_hotel": "On the tour, then walk; ~20–30 min from Plaza",
    "hours": "on the tour; afternoon free",
    "ticket": "boleto turístico — unverified price",
    "source_urls": [
     "https://www.youtube.com/watch?v=nN2oeAzpAt8",
-    "https://www.youtube.com/watch?v=z1wmPLosRHU"
+    "https://www.youtube.com/watch?v=z1wmPLosRHU",
+    "https://natrontheory.com/natrontheory_book/image.html?id=vi_20_stone"
    ],
    "encyclopedia_pin": "sacsayhuaman",
    "photo_slot": true,
@@ -1040,7 +1047,8 @@
    "look_for": [
     "12-angled stone",
     "14-angled stone around the corner",
-    "Puma in the wall on Calle Inca Roca"
+    "Puma in the wall on Calle Inca Roca",
+    "Cast-vs-carved: macro of the green diorite. Crystals sliced flat by the dressed face = cut stone; crystals standing in a paste = cast"
    ],
    "from_hotel": "2 min from Plaza de Armas",
    "hours": "Street, always (best light early morning before crowds)",
@@ -1299,12 +1307,21 @@
    "look_for": [
     "Fitted-ashlar chullpas",
     "Lizard relief",
-    "Colla vs Inca fabric"
+    "Colla vs Inca fabric",
+    "Cast-vs-carved test (Natron Theory p. 158–161): step inside a ruined tower. Is the dressed face a thin skin over rubble and mortar?",
+    "Cast-vs-carved: exposed top rows. Egg-shaped sockets between facing stones: do loose pebbles fit them, and is the socket surface smooth-moulded or tool-pecked?",
+    "Cast-vs-carved: andesite vesicles. Stretched and aligned = lava flow; round and concentrated at one side = cast",
+    "Cast-vs-carved: macro for phenocrysts cut flush by the dressed surface (carved) vs wrapped by matrix (cast)",
+    "Cutimbo (22 km south of Puno, not on the tour): puma and monkey figures standing proud of the block face (p. 163)"
    ],
    "from_hotel": "~35 km taxi from Puno",
    "hours": "~08:00–17:00 (unverified); 30 km / 45 min from Puno",
    "ticket": "S/15",
-   "source_urls": [],
+   "source_urls": [
+    "https://natrontheory.com/natrontheory_book/image.html?id=vi_10_sillustani",
+    "https://natrontheory.com/natrontheory_book/image.html?id=vi_11_holes",
+    "https://natrontheory.com/natrontheory_book/image.html?id=vi_12_cutimbo"
+   ],
    "encyclopedia_pin": null,
    "photo_slot": true,
    "hours_src": "https://en.wikivoyage.org/wiki/Puno",
@@ -1312,7 +1329,7 @@
     "daylight",
     "enclosed"
    ],
-   "shoot_note": "You can step inside some chullpas — round stone interiors."
+   "shoot_note": "You can step inside some chullpas — round stone interiors. Insta360 X5 on the pole shows tower tops and interiors without climbing; iPhone macro for grain and vesicles."
   },
   {
    "slug": "uros",
